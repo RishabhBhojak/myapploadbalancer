@@ -8,7 +8,7 @@ const app = express()
 const mongoose = require('mongoose')
 
 // Connecting to local MongoDB
-mongoose.connect("mongodb://root:example@my_db_rishabh:27017/db?authSource=admin", {
+mongoose.connect("mongodb://root:example@localhost:27017/db?authSource=admin", {
   useNewUrlParser: true
 });
 
@@ -56,7 +56,7 @@ app.get('/', async function(req,res){
     visitors.save()
 
     // Sending thee count of visitor to the browser
-    res.send(`<h2>Counter: `+visitors.count+'</h2>')
+    res.send(`<h2>Container IP: ${req.headers.host}</h2><h2>Counter: `+visitors.count+'</h2>')
 
     // Logging the visitor count in the console
     console.log("visitor arrived: ",visitors.count)
@@ -64,9 +64,10 @@ app.get('/', async function(req,res){
 })
 
 // Creating server to listen at localhost 3000
-app.listen(3000,function(req,res){
+app.listen(3001,function(req,res){
 
   // Logging when the server has started
-  console.log("listening to server 3000")
+  console.log("listening to server 3001")
 })
+
 

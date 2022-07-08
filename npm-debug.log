@@ -1,0 +1,2972 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'mongodb' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData mongodb
+8 silly fetchNamedPackageData mongodb
+9 silly mapToRegistry name mongodb
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/mongodb
+13 verbose request uri https://registry.npmjs.org/mongodb
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 10:28:56 AM
+16 verbose request id 0ad29bfd001f8a3d
+17 http request GET https://registry.npmjs.org/mongodb
+18 http 200 https://registry.npmjs.org/mongodb
+19 verbose headers { date: 'Fri, 08 Jul 2022 10:28:56 GMT',
+19 verbose headers   'content-type': 'application/json',
+19 verbose headers   'transfer-encoding': 'chunked',
+19 verbose headers   connection: 'keep-alive',
+19 verbose headers   'cf-ray': '727822cec9a160b3-SEA',
+19 verbose headers   'access-control-allow-origin': '*',
+19 verbose headers   age: '98',
+19 verbose headers   'cache-control': 'public, max-age=300',
+19 verbose headers   etag: 'W/"7c53ac760bd1ce3675440f96f328455d"',
+19 verbose headers   'last-modified': 'Mon, 20 Jun 2022 06:17:58 GMT',
+19 verbose headers   vary: 'accept-encoding, accept',
+19 verbose headers   'cf-cache-status': 'HIT',
+19 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+19 verbose headers   'x-amz-replication-status': 'COMPLETED',
+19 verbose headers   server: 'cloudflare',
+19 verbose headers   'content-encoding': 'gzip' }
+20 silly get cb [ 200,
+20 silly get   { date: 'Fri, 08 Jul 2022 10:28:56 GMT',
+20 silly get     'content-type': 'application/json',
+20 silly get     'transfer-encoding': 'chunked',
+20 silly get     connection: 'keep-alive',
+20 silly get     'cf-ray': '727822cec9a160b3-SEA',
+20 silly get     'access-control-allow-origin': '*',
+20 silly get     age: '98',
+20 silly get     'cache-control': 'public, max-age=300',
+20 silly get     etag: 'W/"7c53ac760bd1ce3675440f96f328455d"',
+20 silly get     'last-modified': 'Mon, 20 Jun 2022 06:17:58 GMT',
+20 silly get     vary: 'accept-encoding, accept',
+20 silly get     'cf-cache-status': 'HIT',
+20 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+20 silly get     'x-amz-replication-status': 'COMPLETED',
+20 silly get     server: 'cloudflare',
+20 silly get     'content-encoding': 'gzip' } ]
+21 verbose get saving mongodb to /root/.npm/registry.npmjs.org/mongodb/.cache.json
+22 verbose makeDirectory /root/.npm creation not in flight; initializing
+23 silly makeDirectory /root/.npm uid: 0 gid: 0
+24 silly install normalizeTree
+25 silly loadCurrentTree Finishing
+26 silly loadIdealTree Starting
+27 silly install loadIdealTree
+28 silly cloneCurrentTree Starting
+29 silly install cloneCurrentTreeToIdealTree
+30 silly cloneCurrentTree Finishing
+31 silly loadShrinkwrap Starting
+32 silly install loadShrinkwrap
+33 silly loadShrinkwrap Finishing
+34 silly loadAllDepsIntoIdealTree Starting
+35 silly install loadAllDepsIntoIdealTree
+36 silly resolveWithNewModule mongodb@4.7.0 checking installable status
+37 silly cache add args [ 'mongodb', null ]
+38 verbose cache add spec mongodb
+39 silly cache add parsed spec Result {
+39 silly cache add   raw: 'mongodb',
+39 silly cache add   scope: null,
+39 silly cache add   name: 'mongodb',
+39 silly cache add   rawSpec: '',
+39 silly cache add   spec: 'latest',
+39 silly cache add   type: 'tag' }
+40 silly addNamed mongodb@latest
+41 verbose addNamed "latest" is being treated as a dist-tag for mongodb
+42 info addNameTag [ 'mongodb', 'latest' ]
+43 silly mapToRegistry name mongodb
+44 silly mapToRegistry using default registry
+45 silly mapToRegistry registry https://registry.npmjs.org/
+46 silly mapToRegistry uri https://registry.npmjs.org/mongodb
+47 verbose addNameTag registry:https://registry.npmjs.org/mongodb not in flight; fetching
+48 verbose get https://registry.npmjs.org/mongodb not expired, no request
+49 silly addNameTag next cb for mongodb with tag latest
+50 silly addNamed mongodb@4.7.0
+51 verbose addNamed "4.7.0" is a plain semver version for mongodb
+52 silly mapToRegistry name mongodb
+53 silly mapToRegistry using default registry
+54 silly mapToRegistry registry https://registry.npmjs.org/
+55 silly mapToRegistry uri https://registry.npmjs.org/mongodb
+56 verbose addRemoteTarball https://registry.npmjs.org/mongodb/-/mongodb-4.7.0.tgz not in flight; adding
+57 verbose addRemoteTarball [ 'https://registry.npmjs.org/mongodb/-/mongodb-4.7.0.tgz',
+57 verbose addRemoteTarball   '99f7323271d93659067695b60e7b4efee2de9bf0' ]
+58 info retry fetch attempt 1 at 10:28:57 AM
+59 info attempt registry request try #1 at 10:28:57 AM
+60 http fetch GET https://registry.npmjs.org/mongodb/-/mongodb-4.7.0.tgz
+61 http fetch 200 https://registry.npmjs.org/mongodb/-/mongodb-4.7.0.tgz
+62 silly fetchAndShaCheck shasum 99f7323271d93659067695b60e7b4efee2de9bf0
+63 verbose addTmpTarball /tmp/npm-3224-e7ee46a1/registry.npmjs.org/mongodb/-/mongodb-4.7.0.tgz not in flight; adding
+64 verbose addTmpTarball already have metadata; skipping unpack for mongodb@4.7.0
+65 silly cache afterAdd mongodb@4.7.0
+66 verbose afterAdd /root/.npm/mongodb/4.7.0/package/package.json not in flight; writing
+67 verbose afterAdd /root/.npm/mongodb/4.7.0/package/package.json written
+68 silly fetchNamedPackageData denque
+69 silly mapToRegistry name denque
+70 silly mapToRegistry using default registry
+71 silly mapToRegistry registry https://registry.npmjs.org/
+72 silly mapToRegistry uri https://registry.npmjs.org/denque
+73 silly fetchNamedPackageData mongodb-connection-string-url
+74 silly mapToRegistry name mongodb-connection-string-url
+75 silly mapToRegistry using default registry
+76 silly mapToRegistry registry https://registry.npmjs.org/
+77 silly mapToRegistry uri https://registry.npmjs.org/mongodb-connection-string-url
+78 silly fetchNamedPackageData socks
+79 silly mapToRegistry name socks
+80 silly mapToRegistry using default registry
+81 silly mapToRegistry registry https://registry.npmjs.org/
+82 silly mapToRegistry uri https://registry.npmjs.org/socks
+83 silly fetchNamedPackageData saslprep
+84 silly mapToRegistry name saslprep
+85 silly mapToRegistry using default registry
+86 silly mapToRegistry registry https://registry.npmjs.org/
+87 silly mapToRegistry uri https://registry.npmjs.org/saslprep
+88 verbose request uri https://registry.npmjs.org/denque
+89 verbose request no auth needed
+90 info attempt registry request try #1 at 10:28:57 AM
+91 http request GET https://registry.npmjs.org/denque
+92 verbose request uri https://registry.npmjs.org/mongodb-connection-string-url
+93 verbose request no auth needed
+94 info attempt registry request try #1 at 10:28:57 AM
+95 http request GET https://registry.npmjs.org/mongodb-connection-string-url
+96 verbose request uri https://registry.npmjs.org/socks
+97 verbose request no auth needed
+98 info attempt registry request try #1 at 10:28:57 AM
+99 http request GET https://registry.npmjs.org/socks
+100 verbose request uri https://registry.npmjs.org/saslprep
+101 verbose request no auth needed
+102 info attempt registry request try #1 at 10:28:57 AM
+103 http request GET https://registry.npmjs.org/saslprep
+104 http 200 https://registry.npmjs.org/denque
+105 verbose headers { date: 'Fri, 08 Jul 2022 10:28:57 GMT',
+105 verbose headers   'content-type': 'application/json',
+105 verbose headers   'transfer-encoding': 'chunked',
+105 verbose headers   connection: 'keep-alive',
+105 verbose headers   'cf-ray': '727822d2de5160b3-SEA',
+105 verbose headers   'access-control-allow-origin': '*',
+105 verbose headers   age: '70',
+105 verbose headers   'cache-control': 'public, max-age=300',
+105 verbose headers   etag: 'W/"63efec43146e22ea3d6533e28e089169"',
+105 verbose headers   'last-modified': 'Wed, 15 Jun 2022 00:41:35 GMT',
+105 verbose headers   vary: 'accept-encoding, accept',
+105 verbose headers   'cf-cache-status': 'HIT',
+105 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+105 verbose headers   'x-amz-replication-status': 'PENDING',
+105 verbose headers   server: 'cloudflare',
+105 verbose headers   'content-encoding': 'gzip' }
+106 silly get cb [ 200,
+106 silly get   { date: 'Fri, 08 Jul 2022 10:28:57 GMT',
+106 silly get     'content-type': 'application/json',
+106 silly get     'transfer-encoding': 'chunked',
+106 silly get     connection: 'keep-alive',
+106 silly get     'cf-ray': '727822d2de5160b3-SEA',
+106 silly get     'access-control-allow-origin': '*',
+106 silly get     age: '70',
+106 silly get     'cache-control': 'public, max-age=300',
+106 silly get     etag: 'W/"63efec43146e22ea3d6533e28e089169"',
+106 silly get     'last-modified': 'Wed, 15 Jun 2022 00:41:35 GMT',
+106 silly get     vary: 'accept-encoding, accept',
+106 silly get     'cf-cache-status': 'HIT',
+106 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+106 silly get     'x-amz-replication-status': 'PENDING',
+106 silly get     server: 'cloudflare',
+106 silly get     'content-encoding': 'gzip' } ]
+107 verbose get saving denque to /root/.npm/registry.npmjs.org/denque/.cache.json
+108 silly resolveWithNewModule denque@2.0.1 checking installable status
+109 silly cache add args [ 'denque@^2.0.1', null ]
+110 verbose cache add spec denque@^2.0.1
+111 silly cache add parsed spec Result {
+111 silly cache add   raw: 'denque@^2.0.1',
+111 silly cache add   scope: null,
+111 silly cache add   name: 'denque',
+111 silly cache add   rawSpec: '^2.0.1',
+111 silly cache add   spec: '>=2.0.1 <3.0.0',
+111 silly cache add   type: 'range' }
+112 silly addNamed denque@>=2.0.1 <3.0.0
+113 verbose addNamed ">=2.0.1 <3.0.0" is a valid semver range for denque
+114 silly addNameRange { name: 'denque', range: '>=2.0.1 <3.0.0', hasData: false }
+115 silly mapToRegistry name denque
+116 silly mapToRegistry using default registry
+117 silly mapToRegistry registry https://registry.npmjs.org/
+118 silly mapToRegistry uri https://registry.npmjs.org/denque
+119 verbose addNameRange registry:https://registry.npmjs.org/denque not in flight; fetching
+120 verbose get https://registry.npmjs.org/denque not expired, no request
+121 silly addNameRange number 2 { name: 'denque', range: '>=2.0.1 <3.0.0', hasData: true }
+122 silly addNameRange versions [ 'denque',
+122 silly addNameRange   [ '1.0.0',
+122 silly addNameRange     '1.0.1',
+122 silly addNameRange     '1.0.2',
+122 silly addNameRange     '1.0.3',
+122 silly addNameRange     '1.0.4',
+122 silly addNameRange     '1.0.5',
+122 silly addNameRange     '1.0.6',
+122 silly addNameRange     '1.1.0',
+122 silly addNameRange     '1.1.1',
+122 silly addNameRange     '1.2.0',
+122 silly addNameRange     '1.2.1',
+122 silly addNameRange     '1.2.2',
+122 silly addNameRange     '1.2.3',
+122 silly addNameRange     '1.2.4',
+122 silly addNameRange     '1.2.5',
+122 silly addNameRange     '1.2.6',
+122 silly addNameRange     '1.3.0',
+122 silly addNameRange     '1.4.0',
+122 silly addNameRange     '1.4.1',
+122 silly addNameRange     '1.5.0',
+122 silly addNameRange     '1.5.1',
+122 silly addNameRange     '2.0.0',
+122 silly addNameRange     '2.0.1' ] ]
+123 silly addNamed denque@2.0.1
+124 verbose addNamed "2.0.1" is a plain semver version for denque
+125 silly mapToRegistry name denque
+126 silly mapToRegistry using default registry
+127 silly mapToRegistry registry https://registry.npmjs.org/
+128 silly mapToRegistry uri https://registry.npmjs.org/denque
+129 verbose addRemoteTarball https://registry.npmjs.org/denque/-/denque-2.0.1.tgz not in flight; adding
+130 verbose addRemoteTarball [ 'https://registry.npmjs.org/denque/-/denque-2.0.1.tgz',
+130 verbose addRemoteTarball   'bcef4c1b80dc32efe97515744f21a4229ab8934a' ]
+131 info retry fetch attempt 1 at 10:28:57 AM
+132 info attempt registry request try #1 at 10:28:57 AM
+133 http fetch GET https://registry.npmjs.org/denque/-/denque-2.0.1.tgz
+134 http fetch 200 https://registry.npmjs.org/denque/-/denque-2.0.1.tgz
+135 silly fetchAndShaCheck shasum bcef4c1b80dc32efe97515744f21a4229ab8934a
+136 verbose addTmpTarball /tmp/npm-3224-e7ee46a1/registry.npmjs.org/denque/-/denque-2.0.1.tgz not in flight; adding
+137 verbose addTmpTarball already have metadata; skipping unpack for denque@2.0.1
+138 silly cache afterAdd denque@2.0.1
+139 verbose afterAdd /root/.npm/denque/2.0.1/package/package.json not in flight; writing
+140 verbose afterAdd /root/.npm/denque/2.0.1/package/package.json written
+141 http 200 https://registry.npmjs.org/saslprep
+142 verbose headers { date: 'Fri, 08 Jul 2022 10:28:57 GMT',
+142 verbose headers   'content-type': 'application/json',
+142 verbose headers   'transfer-encoding': 'chunked',
+142 verbose headers   connection: 'keep-alive',
+142 verbose headers   'cf-ray': '727822d34dd439a8-SEA',
+142 verbose headers   'access-control-allow-origin': '*',
+142 verbose headers   'cache-control': 'public, max-age=300',
+142 verbose headers   etag: 'W/"20e2a76231d08b5cab286ee8427ca1b1"',
+142 verbose headers   'last-modified': 'Tue, 17 May 2022 03:31:29 GMT',
+142 verbose headers   vary: 'accept-encoding, accept',
+142 verbose headers   'cf-cache-status': 'REVALIDATED',
+142 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+142 verbose headers   'x-amz-replication-status': 'COMPLETED',
+142 verbose headers   server: 'cloudflare',
+142 verbose headers   'content-encoding': 'gzip' }
+143 silly get cb [ 200,
+143 silly get   { date: 'Fri, 08 Jul 2022 10:28:57 GMT',
+143 silly get     'content-type': 'application/json',
+143 silly get     'transfer-encoding': 'chunked',
+143 silly get     connection: 'keep-alive',
+143 silly get     'cf-ray': '727822d34dd439a8-SEA',
+143 silly get     'access-control-allow-origin': '*',
+143 silly get     'cache-control': 'public, max-age=300',
+143 silly get     etag: 'W/"20e2a76231d08b5cab286ee8427ca1b1"',
+143 silly get     'last-modified': 'Tue, 17 May 2022 03:31:29 GMT',
+143 silly get     vary: 'accept-encoding, accept',
+143 silly get     'cf-cache-status': 'REVALIDATED',
+143 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+143 silly get     'x-amz-replication-status': 'COMPLETED',
+143 silly get     server: 'cloudflare',
+143 silly get     'content-encoding': 'gzip' } ]
+144 verbose get saving saslprep to /root/.npm/registry.npmjs.org/saslprep/.cache.json
+145 silly resolveWithNewModule saslprep@1.0.3 checking installable status
+146 silly cache add args [ 'saslprep@^1.0.3', null ]
+147 verbose cache add spec saslprep@^1.0.3
+148 silly cache add parsed spec Result {
+148 silly cache add   raw: 'saslprep@^1.0.3',
+148 silly cache add   scope: null,
+148 silly cache add   name: 'saslprep',
+148 silly cache add   rawSpec: '^1.0.3',
+148 silly cache add   spec: '>=1.0.3 <2.0.0',
+148 silly cache add   type: 'range' }
+149 silly addNamed saslprep@>=1.0.3 <2.0.0
+150 verbose addNamed ">=1.0.3 <2.0.0" is a valid semver range for saslprep
+151 silly addNameRange { name: 'saslprep', range: '>=1.0.3 <2.0.0', hasData: false }
+152 silly mapToRegistry name saslprep
+153 silly mapToRegistry using default registry
+154 silly mapToRegistry registry https://registry.npmjs.org/
+155 silly mapToRegistry uri https://registry.npmjs.org/saslprep
+156 verbose addNameRange registry:https://registry.npmjs.org/saslprep not in flight; fetching
+157 verbose get https://registry.npmjs.org/saslprep not expired, no request
+158 silly addNameRange number 2 { name: 'saslprep', range: '>=1.0.3 <2.0.0', hasData: true }
+159 silly addNameRange versions [ 'saslprep', [ '1.0.0', '1.0.1', '1.0.2', '1.0.3' ] ]
+160 silly addNamed saslprep@1.0.3
+161 verbose addNamed "1.0.3" is a plain semver version for saslprep
+162 silly mapToRegistry name saslprep
+163 silly mapToRegistry using default registry
+164 silly mapToRegistry registry https://registry.npmjs.org/
+165 silly mapToRegistry uri https://registry.npmjs.org/saslprep
+166 verbose addRemoteTarball https://registry.npmjs.org/saslprep/-/saslprep-1.0.3.tgz not in flight; adding
+167 verbose addRemoteTarball [ 'https://registry.npmjs.org/saslprep/-/saslprep-1.0.3.tgz',
+167 verbose addRemoteTarball   '4c02f946b56cf54297e347ba1093e7acac4cf226' ]
+168 info retry fetch attempt 1 at 10:28:57 AM
+169 info attempt registry request try #1 at 10:28:57 AM
+170 http fetch GET https://registry.npmjs.org/saslprep/-/saslprep-1.0.3.tgz
+171 http 200 https://registry.npmjs.org/mongodb-connection-string-url
+172 verbose headers { date: 'Fri, 08 Jul 2022 10:28:57 GMT',
+172 verbose headers   'content-type': 'application/json',
+172 verbose headers   'transfer-encoding': 'chunked',
+172 verbose headers   connection: 'keep-alive',
+172 verbose headers   'cf-ray': '727822d34922e141-SEA',
+172 verbose headers   'access-control-allow-origin': '*',
+172 verbose headers   'cache-control': 'public, max-age=300',
+172 verbose headers   etag: 'W/"2f6f1b26bca32551735e50ac781b6cf6"',
+172 verbose headers   'last-modified': 'Mon, 09 May 2022 18:16:01 GMT',
+172 verbose headers   vary: 'accept-encoding, accept',
+172 verbose headers   'cf-cache-status': 'REVALIDATED',
+172 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+172 verbose headers   'x-amz-replication-status': 'COMPLETED',
+172 verbose headers   server: 'cloudflare',
+172 verbose headers   'content-encoding': 'gzip' }
+173 silly get cb [ 200,
+173 silly get   { date: 'Fri, 08 Jul 2022 10:28:57 GMT',
+173 silly get     'content-type': 'application/json',
+173 silly get     'transfer-encoding': 'chunked',
+173 silly get     connection: 'keep-alive',
+173 silly get     'cf-ray': '727822d34922e141-SEA',
+173 silly get     'access-control-allow-origin': '*',
+173 silly get     'cache-control': 'public, max-age=300',
+173 silly get     etag: 'W/"2f6f1b26bca32551735e50ac781b6cf6"',
+173 silly get     'last-modified': 'Mon, 09 May 2022 18:16:01 GMT',
+173 silly get     vary: 'accept-encoding, accept',
+173 silly get     'cf-cache-status': 'REVALIDATED',
+173 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+173 silly get     'x-amz-replication-status': 'COMPLETED',
+173 silly get     server: 'cloudflare',
+173 silly get     'content-encoding': 'gzip' } ]
+174 verbose get saving mongodb-connection-string-url to /root/.npm/registry.npmjs.org/mongodb-connection-string-url/.cache.json
+175 http 200 https://registry.npmjs.org/socks
+176 verbose headers { date: 'Fri, 08 Jul 2022 10:28:57 GMT',
+176 verbose headers   'content-type': 'application/json',
+176 verbose headers   'transfer-encoding': 'chunked',
+176 verbose headers   connection: 'keep-alive',
+176 verbose headers   'cf-ray': '727822d35d0d683e-SEA',
+176 verbose headers   'access-control-allow-origin': '*',
+176 verbose headers   age: '256',
+176 verbose headers   'cache-control': 'public, max-age=300',
+176 verbose headers   etag: 'W/"650f13b5041603f45997f56512d805ac"',
+176 verbose headers   'last-modified': 'Sun, 26 Jun 2022 21:59:56 GMT',
+176 verbose headers   vary: 'accept-encoding, accept',
+176 verbose headers   'cf-cache-status': 'HIT',
+176 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+176 verbose headers   'x-amz-replication-status': 'COMPLETED',
+176 verbose headers   server: 'cloudflare',
+176 verbose headers   'content-encoding': 'gzip' }
+177 silly get cb [ 200,
+177 silly get   { date: 'Fri, 08 Jul 2022 10:28:57 GMT',
+177 silly get     'content-type': 'application/json',
+177 silly get     'transfer-encoding': 'chunked',
+177 silly get     connection: 'keep-alive',
+177 silly get     'cf-ray': '727822d35d0d683e-SEA',
+177 silly get     'access-control-allow-origin': '*',
+177 silly get     age: '256',
+177 silly get     'cache-control': 'public, max-age=300',
+177 silly get     etag: 'W/"650f13b5041603f45997f56512d805ac"',
+177 silly get     'last-modified': 'Sun, 26 Jun 2022 21:59:56 GMT',
+177 silly get     vary: 'accept-encoding, accept',
+177 silly get     'cf-cache-status': 'HIT',
+177 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+177 silly get     'x-amz-replication-status': 'COMPLETED',
+177 silly get     server: 'cloudflare',
+177 silly get     'content-encoding': 'gzip' } ]
+178 verbose get saving socks to /root/.npm/registry.npmjs.org/socks/.cache.json
+179 silly resolveWithNewModule mongodb-connection-string-url@2.5.2 checking installable status
+180 silly cache add args [ 'mongodb-connection-string-url@^2.5.2', null ]
+181 verbose cache add spec mongodb-connection-string-url@^2.5.2
+182 silly cache add parsed spec Result {
+182 silly cache add   raw: 'mongodb-connection-string-url@^2.5.2',
+182 silly cache add   scope: null,
+182 silly cache add   name: 'mongodb-connection-string-url',
+182 silly cache add   rawSpec: '^2.5.2',
+182 silly cache add   spec: '>=2.5.2 <3.0.0',
+182 silly cache add   type: 'range' }
+183 silly addNamed mongodb-connection-string-url@>=2.5.2 <3.0.0
+184 verbose addNamed ">=2.5.2 <3.0.0" is a valid semver range for mongodb-connection-string-url
+185 silly addNameRange { name: 'mongodb-connection-string-url',
+185 silly addNameRange   range: '>=2.5.2 <3.0.0',
+185 silly addNameRange   hasData: false }
+186 silly mapToRegistry name mongodb-connection-string-url
+187 silly mapToRegistry using default registry
+188 silly mapToRegistry registry https://registry.npmjs.org/
+189 silly mapToRegistry uri https://registry.npmjs.org/mongodb-connection-string-url
+190 verbose addNameRange registry:https://registry.npmjs.org/mongodb-connection-string-url not in flight; fetching
+191 verbose get https://registry.npmjs.org/mongodb-connection-string-url not expired, no request
+192 silly addNameRange number 2 { name: 'mongodb-connection-string-url',
+192 silly addNameRange   range: '>=2.5.2 <3.0.0',
+192 silly addNameRange   hasData: true }
+193 silly addNameRange versions [ 'mongodb-connection-string-url',
+193 silly addNameRange   [ '1.0.0',
+193 silly addNameRange     '1.0.1',
+193 silly addNameRange     '1.0.2',
+193 silly addNameRange     '1.1.0',
+193 silly addNameRange     '1.1.1',
+193 silly addNameRange     '1.1.2',
+193 silly addNameRange     '2.0.0',
+193 silly addNameRange     '2.1.0',
+193 silly addNameRange     '2.2.0',
+193 silly addNameRange     '2.3.0',
+193 silly addNameRange     '2.3.1',
+193 silly addNameRange     '2.3.2',
+193 silly addNameRange     '2.4.0',
+193 silly addNameRange     '2.4.1',
+193 silly addNameRange     '2.4.2',
+193 silly addNameRange     '2.5.0',
+193 silly addNameRange     '2.5.1',
+193 silly addNameRange     '2.5.2' ] ]
+194 silly addNamed mongodb-connection-string-url@2.5.2
+195 verbose addNamed "2.5.2" is a plain semver version for mongodb-connection-string-url
+196 silly mapToRegistry name mongodb-connection-string-url
+197 silly mapToRegistry using default registry
+198 silly mapToRegistry registry https://registry.npmjs.org/
+199 silly mapToRegistry uri https://registry.npmjs.org/mongodb-connection-string-url
+200 verbose addRemoteTarball https://registry.npmjs.org/mongodb-connection-string-url/-/mongodb-connection-string-url-2.5.2.tgz not in flight; adding
+201 verbose addRemoteTarball [ 'https://registry.npmjs.org/mongodb-connection-string-url/-/mongodb-connection-string-url-2.5.2.tgz',
+201 verbose addRemoteTarball   'f075c8d529e8d3916386018b8a396aed4f16e5ed' ]
+202 silly resolveWithNewModule socks@2.6.2 checking installable status
+203 silly cache add args [ 'socks@^2.6.2', null ]
+204 verbose cache add spec socks@^2.6.2
+205 silly cache add parsed spec Result {
+205 silly cache add   raw: 'socks@^2.6.2',
+205 silly cache add   scope: null,
+205 silly cache add   name: 'socks',
+205 silly cache add   rawSpec: '^2.6.2',
+205 silly cache add   spec: '>=2.6.2 <3.0.0',
+205 silly cache add   type: 'range' }
+206 silly addNamed socks@>=2.6.2 <3.0.0
+207 verbose addNamed ">=2.6.2 <3.0.0" is a valid semver range for socks
+208 silly addNameRange { name: 'socks', range: '>=2.6.2 <3.0.0', hasData: false }
+209 silly mapToRegistry name socks
+210 silly mapToRegistry using default registry
+211 silly mapToRegistry registry https://registry.npmjs.org/
+212 silly mapToRegistry uri https://registry.npmjs.org/socks
+213 verbose addNameRange registry:https://registry.npmjs.org/socks not in flight; fetching
+214 info retry fetch attempt 1 at 10:28:57 AM
+215 info attempt registry request try #1 at 10:28:57 AM
+216 http fetch GET https://registry.npmjs.org/mongodb-connection-string-url/-/mongodb-connection-string-url-2.5.2.tgz
+217 verbose get https://registry.npmjs.org/socks not expired, no request
+218 silly addNameRange number 2 { name: 'socks', range: '>=2.6.2 <3.0.0', hasData: true }
+219 silly addNameRange versions [ 'socks',
+219 silly addNameRange   [ '0.0.1',
+219 silly addNameRange     '1.0.0',
+219 silly addNameRange     '1.1.5',
+219 silly addNameRange     '1.1.6',
+219 silly addNameRange     '1.1.7',
+219 silly addNameRange     '1.1.8',
+219 silly addNameRange     '1.1.9',
+219 silly addNameRange     '1.1.10',
+219 silly addNameRange     '2.0.0',
+219 silly addNameRange     '2.0.1',
+219 silly addNameRange     '2.0.2',
+219 silly addNameRange     '2.0.3',
+219 silly addNameRange     '2.0.4',
+219 silly addNameRange     '2.0.5',
+219 silly addNameRange     '2.1.0',
+219 silly addNameRange     '2.1.1',
+219 silly addNameRange     '2.1.2',
+219 silly addNameRange     '2.1.3',
+219 silly addNameRange     '2.1.4',
+219 silly addNameRange     '2.1.5',
+219 silly addNameRange     '2.1.6',
+219 silly addNameRange     '2.2.0',
+219 silly addNameRange     '2.2.1',
+219 silly addNameRange     '2.2.2',
+219 silly addNameRange     '2.2.3',
+219 silly addNameRange     '2.3.0',
+219 silly addNameRange     '2.3.1',
+219 silly addNameRange     '2.3.2',
+219 silly addNameRange     '2.3.3',
+219 silly addNameRange     '2.4.0',
+219 silly addNameRange     '2.4.1',
+219 silly addNameRange     '2.4.2',
+219 silly addNameRange     '2.4.3',
+219 silly addNameRange     '2.4.4',
+219 silly addNameRange     '2.5.0',
+219 silly addNameRange     '2.5.1',
+219 silly addNameRange     '2.6.0-beta.1',
+219 silly addNameRange     '2.6.0',
+219 silly addNameRange     '2.6.1',
+219 silly addNameRange     '2.6.2' ] ]
+220 silly addNamed socks@2.6.2
+221 verbose addNamed "2.6.2" is a plain semver version for socks
+222 silly mapToRegistry name socks
+223 silly mapToRegistry using default registry
+224 silly mapToRegistry registry https://registry.npmjs.org/
+225 silly mapToRegistry uri https://registry.npmjs.org/socks
+226 verbose addRemoteTarball https://registry.npmjs.org/socks/-/socks-2.6.2.tgz not in flight; adding
+227 verbose addRemoteTarball [ 'https://registry.npmjs.org/socks/-/socks-2.6.2.tgz',
+227 verbose addRemoteTarball   'ec042d7960073d40d94268ff3bb727dc685f111a' ]
+228 info retry fetch attempt 1 at 10:28:57 AM
+229 info attempt registry request try #1 at 10:28:57 AM
+230 http fetch GET https://registry.npmjs.org/socks/-/socks-2.6.2.tgz
+231 http fetch 200 https://registry.npmjs.org/saslprep/-/saslprep-1.0.3.tgz
+232 silly fetchAndShaCheck shasum 4c02f946b56cf54297e347ba1093e7acac4cf226
+233 verbose addTmpTarball /tmp/npm-3224-e7ee46a1/registry.npmjs.org/saslprep/-/saslprep-1.0.3.tgz not in flight; adding
+234 verbose addTmpTarball already have metadata; skipping unpack for saslprep@1.0.3
+235 silly cache afterAdd saslprep@1.0.3
+236 verbose afterAdd /root/.npm/saslprep/1.0.3/package/package.json not in flight; writing
+237 verbose afterAdd /root/.npm/saslprep/1.0.3/package/package.json written
+238 http fetch 200 https://registry.npmjs.org/mongodb-connection-string-url/-/mongodb-connection-string-url-2.5.2.tgz
+239 silly fetchAndShaCheck shasum f075c8d529e8d3916386018b8a396aed4f16e5ed
+240 verbose addTmpTarball /tmp/npm-3224-e7ee46a1/registry.npmjs.org/mongodb-connection-string-url/-/mongodb-connection-string-url-2.5.2.tgz not in flight; adding
+241 verbose addTmpTarball already have metadata; skipping unpack for mongodb-connection-string-url@2.5.2
+242 silly cache afterAdd mongodb-connection-string-url@2.5.2
+243 verbose afterAdd /root/.npm/mongodb-connection-string-url/2.5.2/package/package.json not in flight; writing
+244 verbose afterAdd /root/.npm/mongodb-connection-string-url/2.5.2/package/package.json written
+245 http fetch 200 https://registry.npmjs.org/socks/-/socks-2.6.2.tgz
+246 silly fetchAndShaCheck shasum ec042d7960073d40d94268ff3bb727dc685f111a
+247 verbose addTmpTarball /tmp/npm-3224-e7ee46a1/registry.npmjs.org/socks/-/socks-2.6.2.tgz not in flight; adding
+248 verbose addTmpTarball already have metadata; skipping unpack for socks@2.6.2
+249 silly cache afterAdd socks@2.6.2
+250 verbose afterAdd /root/.npm/socks/2.6.2/package/package.json not in flight; writing
+251 verbose afterAdd /root/.npm/socks/2.6.2/package/package.json written
+252 silly fetchNamedPackageData @types/whatwg-url
+253 silly mapToRegistry name @types/whatwg-url
+254 silly mapToRegistry scope (from package name) @types
+255 verbose mapToRegistry no registry URL found in name for scope @types
+256 silly mapToRegistry using default registry
+257 silly mapToRegistry registry https://registry.npmjs.org/
+258 silly mapToRegistry uri https://registry.npmjs.org/@types%2fwhatwg-url
+259 silly fetchNamedPackageData whatwg-url
+260 silly mapToRegistry name whatwg-url
+261 silly mapToRegistry using default registry
+262 silly mapToRegistry registry https://registry.npmjs.org/
+263 silly mapToRegistry uri https://registry.npmjs.org/whatwg-url
+264 verbose request uri https://registry.npmjs.org/@types%2fwhatwg-url
+265 verbose request no auth needed
+266 info attempt registry request try #1 at 10:28:57 AM
+267 http request GET https://registry.npmjs.org/@types%2fwhatwg-url
+268 verbose request uri https://registry.npmjs.org/whatwg-url
+269 verbose request no auth needed
+270 info attempt registry request try #1 at 10:28:57 AM
+271 http request GET https://registry.npmjs.org/whatwg-url
+272 http 200 https://registry.npmjs.org/whatwg-url
+273 verbose headers { date: 'Fri, 08 Jul 2022 10:28:57 GMT',
+273 verbose headers   'content-type': 'application/json',
+273 verbose headers   'transfer-encoding': 'chunked',
+273 verbose headers   connection: 'keep-alive',
+273 verbose headers   'cf-ray': '727822d4b88c60b3-SEA',
+273 verbose headers   'access-control-allow-origin': '*',
+273 verbose headers   age: '236',
+273 verbose headers   'cache-control': 'public, max-age=300',
+273 verbose headers   etag: 'W/"1bbafe75312941e19635b31f0487d36a"',
+273 verbose headers   'last-modified': 'Wed, 29 Jun 2022 01:23:54 GMT',
+273 verbose headers   vary: 'accept-encoding, accept',
+273 verbose headers   'cf-cache-status': 'HIT',
+273 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+273 verbose headers   'x-amz-replication-status': 'PENDING',
+273 verbose headers   server: 'cloudflare',
+273 verbose headers   'content-encoding': 'gzip' }
+274 silly get cb [ 200,
+274 silly get   { date: 'Fri, 08 Jul 2022 10:28:57 GMT',
+274 silly get     'content-type': 'application/json',
+274 silly get     'transfer-encoding': 'chunked',
+274 silly get     connection: 'keep-alive',
+274 silly get     'cf-ray': '727822d4b88c60b3-SEA',
+274 silly get     'access-control-allow-origin': '*',
+274 silly get     age: '236',
+274 silly get     'cache-control': 'public, max-age=300',
+274 silly get     etag: 'W/"1bbafe75312941e19635b31f0487d36a"',
+274 silly get     'last-modified': 'Wed, 29 Jun 2022 01:23:54 GMT',
+274 silly get     vary: 'accept-encoding, accept',
+274 silly get     'cf-cache-status': 'HIT',
+274 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+274 silly get     'x-amz-replication-status': 'PENDING',
+274 silly get     server: 'cloudflare',
+274 silly get     'content-encoding': 'gzip' } ]
+275 verbose get saving whatwg-url to /root/.npm/registry.npmjs.org/whatwg-url/.cache.json
+276 silly resolveWithNewModule whatwg-url@11.0.0 checking installable status
+277 silly cache add args [ 'whatwg-url@^11.0.0', null ]
+278 verbose cache add spec whatwg-url@^11.0.0
+279 silly cache add parsed spec Result {
+279 silly cache add   raw: 'whatwg-url@^11.0.0',
+279 silly cache add   scope: null,
+279 silly cache add   name: 'whatwg-url',
+279 silly cache add   rawSpec: '^11.0.0',
+279 silly cache add   spec: '>=11.0.0 <12.0.0',
+279 silly cache add   type: 'range' }
+280 silly addNamed whatwg-url@>=11.0.0 <12.0.0
+281 verbose addNamed ">=11.0.0 <12.0.0" is a valid semver range for whatwg-url
+282 silly addNameRange { name: 'whatwg-url', range: '>=11.0.0 <12.0.0', hasData: false }
+283 silly mapToRegistry name whatwg-url
+284 silly mapToRegistry using default registry
+285 silly mapToRegistry registry https://registry.npmjs.org/
+286 silly mapToRegistry uri https://registry.npmjs.org/whatwg-url
+287 verbose addNameRange registry:https://registry.npmjs.org/whatwg-url not in flight; fetching
+288 verbose get https://registry.npmjs.org/whatwg-url not expired, no request
+289 silly addNameRange number 2 { name: 'whatwg-url', range: '>=11.0.0 <12.0.0', hasData: true }
+290 silly addNameRange versions [ 'whatwg-url',
+290 silly addNameRange   [ '0.0.1',
+290 silly addNameRange     '0.1.0',
+290 silly addNameRange     '0.2.0',
+290 silly addNameRange     '0.2.1',
+290 silly addNameRange     '0.3.0',
+290 silly addNameRange     '0.3.1',
+290 silly addNameRange     '0.4.0',
+290 silly addNameRange     '0.4.1',
+290 silly addNameRange     '0.4.2',
+290 silly addNameRange     '0.5.0',
+290 silly addNameRange     '0.6.0',
+290 silly addNameRange     '0.6.1',
+290 silly addNameRange     '0.6.2',
+290 silly addNameRange     '0.6.4',
+290 silly addNameRange     '0.6.5',
+290 silly addNameRange     '1.0.0',
+290 silly addNameRange     '1.0.1',
+290 silly addNameRange     '2.0.0',
+290 silly addNameRange     '2.0.1',
+290 silly addNameRange     '3.0.0',
+290 silly addNameRange     '3.1.0',
+290 silly addNameRange     '4.0.0',
+290 silly addNameRange     '4.1.0',
+290 silly addNameRange     '4.1.1',
+290 silly addNameRange     '4.2.0',
+290 silly addNameRange     '4.3.0',
+290 silly addNameRange     '4.4.0',
+290 silly addNameRange     '4.5.0',
+290 silly addNameRange     '4.5.1',
+290 silly addNameRange     '4.6.0',
+290 silly addNameRange     '4.7.0',
+290 silly addNameRange     '4.7.1',
+290 silly addNameRange     '4.8.0',
+290 silly addNameRange     '5.0.0',
+290 silly addNameRange     '6.0.0',
+290 silly addNameRange     '6.0.1',
+290 silly addNameRange     '6.1.0',
+290 silly addNameRange     '6.2.0',
+290 silly addNameRange     '6.2.1',
+290 silly addNameRange     '6.3.0',
+290 silly addNameRange     '6.4.0',
+290 silly addNameRange     '6.4.1',
+290 silly addNameRange     '6.5.0',
+290 silly addNameRange     '7.0.0',
+290 silly addNameRange     '7.1.0',
+290 silly addNameRange     '8.0.0',
+290 silly addNameRange     '8.1.0',
+290 silly addNameRange     '8.2.0',
+290 silly addNameRange     '8.2.1',
+290 silly addNameRange     '8.2.2',
+290 silly addNameRange     '8.3.0',
+290 silly addNameRange     '8.4.0',
+290 silly addNameRange     '8.5.0',
+290 silly addNameRange     '8.6.0',
+290 silly addNameRange     '8.7.0',
+290 silly addNameRange     '9.0.0',
+290 silly addNameRange     '9.1.0',
+290 silly addNameRange     '10.0.0',
+290 silly addNameRange     '11.0.0' ] ]
+291 silly addNamed whatwg-url@11.0.0
+292 verbose addNamed "11.0.0" is a plain semver version for whatwg-url
+293 silly mapToRegistry name whatwg-url
+294 silly mapToRegistry using default registry
+295 silly mapToRegistry registry https://registry.npmjs.org/
+296 silly mapToRegistry uri https://registry.npmjs.org/whatwg-url
+297 verbose addRemoteTarball https://registry.npmjs.org/whatwg-url/-/whatwg-url-11.0.0.tgz not in flight; adding
+298 verbose addRemoteTarball [ 'https://registry.npmjs.org/whatwg-url/-/whatwg-url-11.0.0.tgz',
+298 verbose addRemoteTarball   '0a849eebb5faf2119b901bb76fd795c2848d4018' ]
+299 info retry fetch attempt 1 at 10:28:57 AM
+300 info attempt registry request try #1 at 10:28:57 AM
+301 http fetch GET https://registry.npmjs.org/whatwg-url/-/whatwg-url-11.0.0.tgz
+302 http 200 https://registry.npmjs.org/@types%2fwhatwg-url
+303 verbose headers { date: 'Fri, 08 Jul 2022 10:28:57 GMT',
+303 verbose headers   'content-type': 'application/json',
+303 verbose headers   'transfer-encoding': 'chunked',
+303 verbose headers   connection: 'keep-alive',
+303 verbose headers   'cf-ray': '727822d4ba13e141-SEA',
+303 verbose headers   'access-control-allow-origin': '*',
+303 verbose headers   age: '93',
+303 verbose headers   'cache-control': 'public, max-age=300',
+303 verbose headers   etag: 'W/"a175039bdf820b765ee84cc77b38c754"',
+303 verbose headers   'last-modified': 'Tue, 21 Jun 2022 16:32:59 GMT',
+303 verbose headers   vary: 'accept-encoding, accept',
+303 verbose headers   'cf-cache-status': 'HIT',
+303 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+303 verbose headers   'x-amz-replication-status': 'COMPLETED',
+303 verbose headers   server: 'cloudflare',
+303 verbose headers   'content-encoding': 'gzip' }
+304 silly get cb [ 200,
+304 silly get   { date: 'Fri, 08 Jul 2022 10:28:57 GMT',
+304 silly get     'content-type': 'application/json',
+304 silly get     'transfer-encoding': 'chunked',
+304 silly get     connection: 'keep-alive',
+304 silly get     'cf-ray': '727822d4ba13e141-SEA',
+304 silly get     'access-control-allow-origin': '*',
+304 silly get     age: '93',
+304 silly get     'cache-control': 'public, max-age=300',
+304 silly get     etag: 'W/"a175039bdf820b765ee84cc77b38c754"',
+304 silly get     'last-modified': 'Tue, 21 Jun 2022 16:32:59 GMT',
+304 silly get     vary: 'accept-encoding, accept',
+304 silly get     'cf-cache-status': 'HIT',
+304 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+304 silly get     'x-amz-replication-status': 'COMPLETED',
+304 silly get     server: 'cloudflare',
+304 silly get     'content-encoding': 'gzip' } ]
+305 verbose get saving @types/whatwg-url to /root/.npm/registry.npmjs.org/_40types_252fwhatwg-url/.cache.json
+306 silly resolveWithNewModule @types/whatwg-url@8.2.2 checking installable status
+307 silly cache add args [ '@types/whatwg-url@^8.2.1', null ]
+308 verbose cache add spec @types/whatwg-url@^8.2.1
+309 silly cache add parsed spec Result {
+309 silly cache add   raw: '@types/whatwg-url@^8.2.1',
+309 silly cache add   scope: '@types',
+309 silly cache add   name: '@types/whatwg-url',
+309 silly cache add   rawSpec: '^8.2.1',
+309 silly cache add   spec: '>=8.2.1 <9.0.0',
+309 silly cache add   type: 'range' }
+310 silly addNamed @types/whatwg-url@>=8.2.1 <9.0.0
+311 verbose addNamed ">=8.2.1 <9.0.0" is a valid semver range for @types/whatwg-url
+312 silly addNameRange { name: '@types/whatwg-url',
+312 silly addNameRange   range: '>=8.2.1 <9.0.0',
+312 silly addNameRange   hasData: false }
+313 silly mapToRegistry name @types/whatwg-url
+314 silly mapToRegistry scope (from package name) @types
+315 verbose mapToRegistry no registry URL found in name for scope @types
+316 silly mapToRegistry using default registry
+317 silly mapToRegistry registry https://registry.npmjs.org/
+318 silly mapToRegistry uri https://registry.npmjs.org/@types%2fwhatwg-url
+319 verbose addNameRange registry:https://registry.npmjs.org/@types%2fwhatwg-url not in flight; fetching
+320 verbose get https://registry.npmjs.org/@types%2fwhatwg-url not expired, no request
+321 silly addNameRange number 2 { name: '@types/whatwg-url',
+321 silly addNameRange   range: '>=8.2.1 <9.0.0',
+321 silly addNameRange   hasData: true }
+322 silly addNameRange versions [ '@types/whatwg-url',
+322 silly addNameRange   [ '6.4.0', '8.0.0', '8.2.0', '8.2.1', '8.2.2' ] ]
+323 silly addNamed @types/whatwg-url@8.2.2
+324 verbose addNamed "8.2.2" is a plain semver version for @types/whatwg-url
+325 silly mapToRegistry name @types/whatwg-url
+326 silly mapToRegistry scope (from package name) @types
+327 verbose mapToRegistry no registry URL found in name for scope @types
+328 silly mapToRegistry using default registry
+329 silly mapToRegistry registry https://registry.npmjs.org/
+330 silly mapToRegistry uri https://registry.npmjs.org/@types%2fwhatwg-url
+331 verbose addRemoteTarball https://registry.npmjs.org/@types/whatwg-url/-/whatwg-url-8.2.2.tgz not in flight; adding
+332 verbose addRemoteTarball [ 'https://registry.npmjs.org/@types/whatwg-url/-/whatwg-url-8.2.2.tgz',
+332 verbose addRemoteTarball   '749d5b3873e845897ada99be4448041d4cc39e63' ]
+333 info retry fetch attempt 1 at 10:28:57 AM
+334 info attempt registry request try #1 at 10:28:57 AM
+335 http fetch GET https://registry.npmjs.org/@types/whatwg-url/-/whatwg-url-8.2.2.tgz
+336 http fetch 200 https://registry.npmjs.org/whatwg-url/-/whatwg-url-11.0.0.tgz
+337 silly fetchAndShaCheck shasum 0a849eebb5faf2119b901bb76fd795c2848d4018
+338 verbose addTmpTarball /tmp/npm-3224-e7ee46a1/registry.npmjs.org/whatwg-url/-/whatwg-url-11.0.0.tgz not in flight; adding
+339 verbose addTmpTarball already have metadata; skipping unpack for whatwg-url@11.0.0
+340 silly cache afterAdd whatwg-url@11.0.0
+341 verbose afterAdd /root/.npm/whatwg-url/11.0.0/package/package.json not in flight; writing
+342 verbose afterAdd /root/.npm/whatwg-url/11.0.0/package/package.json written
+343 http fetch 200 https://registry.npmjs.org/@types/whatwg-url/-/whatwg-url-8.2.2.tgz
+344 silly fetchAndShaCheck shasum 749d5b3873e845897ada99be4448041d4cc39e63
+345 verbose addTmpTarball /tmp/npm-3224-e7ee46a1/registry.npmjs.org/_40types/whatwg-url/-/whatwg-url-8.2.2.tgz not in flight; adding
+346 verbose addTmpTarball already have metadata; skipping unpack for @types/whatwg-url@8.2.2
+347 silly cache afterAdd @types/whatwg-url@8.2.2
+348 verbose afterAdd /root/.npm/@types/whatwg-url/8.2.2/package/package.json not in flight; writing
+349 verbose afterAdd /root/.npm/@types/whatwg-url/8.2.2/package/package.json written
+350 silly fetchNamedPackageData @types/node
+351 silly mapToRegistry name @types/node
+352 silly mapToRegistry scope (from package name) @types
+353 verbose mapToRegistry no registry URL found in name for scope @types
+354 silly mapToRegistry using default registry
+355 silly mapToRegistry registry https://registry.npmjs.org/
+356 silly mapToRegistry uri https://registry.npmjs.org/@types%2fnode
+357 silly fetchNamedPackageData @types/webidl-conversions
+358 silly mapToRegistry name @types/webidl-conversions
+359 silly mapToRegistry scope (from package name) @types
+360 verbose mapToRegistry no registry URL found in name for scope @types
+361 silly mapToRegistry using default registry
+362 silly mapToRegistry registry https://registry.npmjs.org/
+363 silly mapToRegistry uri https://registry.npmjs.org/@types%2fwebidl-conversions
+364 verbose request uri https://registry.npmjs.org/@types%2fnode
+365 verbose request no auth needed
+366 info attempt registry request try #1 at 10:28:57 AM
+367 http request GET https://registry.npmjs.org/@types%2fnode
+368 verbose request uri https://registry.npmjs.org/@types%2fwebidl-conversions
+369 verbose request no auth needed
+370 info attempt registry request try #1 at 10:28:57 AM
+371 http request GET https://registry.npmjs.org/@types%2fwebidl-conversions
+372 http 200 https://registry.npmjs.org/@types%2fwebidl-conversions
+373 verbose headers { date: 'Fri, 08 Jul 2022 10:28:57 GMT',
+373 verbose headers   'content-type': 'application/json',
+373 verbose headers   'transfer-encoding': 'chunked',
+373 verbose headers   connection: 'keep-alive',
+373 verbose headers   'cf-ray': '727822d5aaa9e141-SEA',
+373 verbose headers   'access-control-allow-origin': '*',
+373 verbose headers   age: '160',
+373 verbose headers   'cache-control': 'public, max-age=300',
+373 verbose headers   etag: 'W/"ecd96b5e462c4ed52b497d31ce17c2dd"',
+373 verbose headers   'last-modified': 'Mon, 16 May 2022 08:51:44 GMT',
+373 verbose headers   vary: 'accept-encoding, accept',
+373 verbose headers   'cf-cache-status': 'HIT',
+373 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+373 verbose headers   'x-amz-replication-status': 'PENDING',
+373 verbose headers   server: 'cloudflare',
+373 verbose headers   'content-encoding': 'gzip' }
+374 silly get cb [ 200,
+374 silly get   { date: 'Fri, 08 Jul 2022 10:28:57 GMT',
+374 silly get     'content-type': 'application/json',
+374 silly get     'transfer-encoding': 'chunked',
+374 silly get     connection: 'keep-alive',
+374 silly get     'cf-ray': '727822d5aaa9e141-SEA',
+374 silly get     'access-control-allow-origin': '*',
+374 silly get     age: '160',
+374 silly get     'cache-control': 'public, max-age=300',
+374 silly get     etag: 'W/"ecd96b5e462c4ed52b497d31ce17c2dd"',
+374 silly get     'last-modified': 'Mon, 16 May 2022 08:51:44 GMT',
+374 silly get     vary: 'accept-encoding, accept',
+374 silly get     'cf-cache-status': 'HIT',
+374 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+374 silly get     'x-amz-replication-status': 'PENDING',
+374 silly get     server: 'cloudflare',
+374 silly get     'content-encoding': 'gzip' } ]
+375 verbose get saving @types/webidl-conversions to /root/.npm/registry.npmjs.org/_40types_252fwebidl-conversions/.cache.json
+376 silly resolveWithNewModule @types/webidl-conversions@6.1.1 checking installable status
+377 silly cache add args [ '@types/webidl-conversions@*', null ]
+378 verbose cache add spec @types/webidl-conversions@*
+379 silly cache add parsed spec Result {
+379 silly cache add   raw: '@types/webidl-conversions@*',
+379 silly cache add   scope: '@types',
+379 silly cache add   name: '@types/webidl-conversions',
+379 silly cache add   rawSpec: '*',
+379 silly cache add   spec: '*',
+379 silly cache add   type: 'range' }
+380 silly addNamed @types/webidl-conversions@*
+381 verbose addNamed "*" is a valid semver range for @types/webidl-conversions
+382 silly addNameRange { name: '@types/webidl-conversions', range: '*', hasData: false }
+383 silly mapToRegistry name @types/webidl-conversions
+384 silly mapToRegistry scope (from package name) @types
+385 verbose mapToRegistry no registry URL found in name for scope @types
+386 silly mapToRegistry using default registry
+387 silly mapToRegistry registry https://registry.npmjs.org/
+388 silly mapToRegistry uri https://registry.npmjs.org/@types%2fwebidl-conversions
+389 verbose addNameRange registry:https://registry.npmjs.org/@types%2fwebidl-conversions not in flight; fetching
+390 verbose get https://registry.npmjs.org/@types%2fwebidl-conversions not expired, no request
+391 silly addNameRange number 2 { name: '@types/webidl-conversions', range: '*', hasData: true }
+392 silly addNameRange versions [ '@types/webidl-conversions',
+392 silly addNameRange   [ '4.0.0', '5.0.0', '6.0.0', '6.0.1', '6.1.0', '6.1.1' ] ]
+393 silly addNamed @types/webidl-conversions@6.1.1
+394 verbose addNamed "6.1.1" is a plain semver version for @types/webidl-conversions
+395 silly mapToRegistry name @types/webidl-conversions
+396 silly mapToRegistry scope (from package name) @types
+397 verbose mapToRegistry no registry URL found in name for scope @types
+398 silly mapToRegistry using default registry
+399 silly mapToRegistry registry https://registry.npmjs.org/
+400 silly mapToRegistry uri https://registry.npmjs.org/@types%2fwebidl-conversions
+401 verbose addRemoteTarball https://registry.npmjs.org/@types/webidl-conversions/-/webidl-conversions-6.1.1.tgz not in flight; adding
+402 verbose addRemoteTarball [ 'https://registry.npmjs.org/@types/webidl-conversions/-/webidl-conversions-6.1.1.tgz',
+402 verbose addRemoteTarball   'e33bc8ea812a01f63f90481c666334844b12a09e' ]
+403 info retry fetch attempt 1 at 10:28:57 AM
+404 info attempt registry request try #1 at 10:28:57 AM
+405 http fetch GET https://registry.npmjs.org/@types/webidl-conversions/-/webidl-conversions-6.1.1.tgz
+406 http fetch 200 https://registry.npmjs.org/@types/webidl-conversions/-/webidl-conversions-6.1.1.tgz
+407 silly fetchAndShaCheck shasum e33bc8ea812a01f63f90481c666334844b12a09e
+408 verbose addTmpTarball /tmp/npm-3224-e7ee46a1/registry.npmjs.org/_40types/webidl-conversions/-/webidl-conversions-6.1.1.tgz not in flight; adding
+409 verbose addTmpTarball already have metadata; skipping unpack for @types/webidl-conversions@6.1.1
+410 silly cache afterAdd @types/webidl-conversions@6.1.1
+411 verbose afterAdd /root/.npm/@types/webidl-conversions/6.1.1/package/package.json not in flight; writing
+412 verbose afterAdd /root/.npm/@types/webidl-conversions/6.1.1/package/package.json written
+413 http 200 https://registry.npmjs.org/@types%2fnode
+414 verbose headers { date: 'Fri, 08 Jul 2022 10:28:57 GMT',
+414 verbose headers   'content-type': 'application/json',
+414 verbose headers   'transfer-encoding': 'chunked',
+414 verbose headers   connection: 'keep-alive',
+414 verbose headers   'cf-ray': '727822d5a99360b3-SEA',
+414 verbose headers   'access-control-allow-origin': '*',
+414 verbose headers   age: '290',
+414 verbose headers   'cache-control': 'public, max-age=300',
+414 verbose headers   etag: 'W/"04ceb15c90197cc9f10b9f39c4c91091"',
+414 verbose headers   'last-modified': 'Wed, 06 Jul 2022 04:03:23 GMT',
+414 verbose headers   vary: 'accept-encoding, accept',
+414 verbose headers   'cf-cache-status': 'HIT',
+414 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+414 verbose headers   'x-amz-replication-status': 'PENDING',
+414 verbose headers   server: 'cloudflare',
+414 verbose headers   'content-encoding': 'gzip' }
+415 silly get cb [ 200,
+415 silly get   { date: 'Fri, 08 Jul 2022 10:28:57 GMT',
+415 silly get     'content-type': 'application/json',
+415 silly get     'transfer-encoding': 'chunked',
+415 silly get     connection: 'keep-alive',
+415 silly get     'cf-ray': '727822d5a99360b3-SEA',
+415 silly get     'access-control-allow-origin': '*',
+415 silly get     age: '290',
+415 silly get     'cache-control': 'public, max-age=300',
+415 silly get     etag: 'W/"04ceb15c90197cc9f10b9f39c4c91091"',
+415 silly get     'last-modified': 'Wed, 06 Jul 2022 04:03:23 GMT',
+415 silly get     vary: 'accept-encoding, accept',
+415 silly get     'cf-cache-status': 'HIT',
+415 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+415 silly get     'x-amz-replication-status': 'PENDING',
+415 silly get     server: 'cloudflare',
+415 silly get     'content-encoding': 'gzip' } ]
+416 verbose get saving @types/node to /root/.npm/registry.npmjs.org/_40types_252fnode/.cache.json
+417 silly resolveWithNewModule @types/node@18.0.3 checking installable status
+418 silly cache add args [ '@types/node@*', null ]
+419 verbose cache add spec @types/node@*
+420 silly cache add parsed spec Result {
+420 silly cache add   raw: '@types/node@*',
+420 silly cache add   scope: '@types',
+420 silly cache add   name: '@types/node',
+420 silly cache add   rawSpec: '*',
+420 silly cache add   spec: '*',
+420 silly cache add   type: 'range' }
+421 silly addNamed @types/node@*
+422 verbose addNamed "*" is a valid semver range for @types/node
+423 silly addNameRange { name: '@types/node', range: '*', hasData: false }
+424 silly mapToRegistry name @types/node
+425 silly mapToRegistry scope (from package name) @types
+426 verbose mapToRegistry no registry URL found in name for scope @types
+427 silly mapToRegistry using default registry
+428 silly mapToRegistry registry https://registry.npmjs.org/
+429 silly mapToRegistry uri https://registry.npmjs.org/@types%2fnode
+430 verbose addNameRange registry:https://registry.npmjs.org/@types%2fnode not in flight; fetching
+431 verbose get https://registry.npmjs.org/@types%2fnode not expired, no request
+432 silly addNameRange number 2 { name: '@types/node', range: '*', hasData: true }
+433 silly addNameRange versions [ '@types/node',
+433 silly addNameRange   [ '4.0.15-alpha',
+433 silly addNameRange     '4.0.16-alpha',
+433 silly addNameRange     '4.0.21-alpha',
+433 silly addNameRange     '4.0.22-alpha',
+433 silly addNameRange     '4.0.23-alpha',
+433 silly addNameRange     '4.0.24-alpha',
+433 silly addNameRange     '4.0.25-alpha',
+433 silly addNameRange     '4.0.26-alpha',
+433 silly addNameRange     '4.0.27-alpha',
+433 silly addNameRange     '4.0.28-alpha',
+433 silly addNameRange     '4.0.29',
+433 silly addNameRange     '4.0.30',
+433 silly addNameRange     '6.0.31',
+433 silly addNameRange     '6.0.32',
+433 silly addNameRange     '6.0.33',
+433 silly addNameRange     '6.0.34',
+433 silly addNameRange     '6.0.35',
+433 silly addNameRange     '6.0.36',
+433 silly addNameRange     '6.0.37',
+433 silly addNameRange     '6.0.38',
+433 silly addNameRange     '6.0.39',
+433 silly addNameRange     '6.0.40',
+433 silly addNameRange     '6.0.41',
+433 silly addNameRange     '6.0.42',
+433 silly addNameRange     '6.0.43',
+433 silly addNameRange     '6.0.44',
+433 silly addNameRange     '6.0.45',
+433 silly addNameRange     '6.0.46',
+433 silly addNameRange     '6.0.47',
+433 silly addNameRange     '6.0.48',
+433 silly addNameRange     '6.0.49',
+433 silly addNameRange     '6.0.50',
+433 silly addNameRange     '6.0.51',
+433 silly addNameRange     '0.0.0',
+433 silly addNameRange     '0.0.1',
+433 silly addNameRange     '0.0.2',
+433 silly addNameRange     '0.0.3',
+433 silly addNameRange     '6.0.52',
+433 silly addNameRange     '6.0.53',
+433 silly addNameRange     '6.0.54',
+433 silly addNameRange     '6.0.55',
+433 silly addNameRange     '6.0.56',
+433 silly addNameRange     '6.0.57',
+433 silly addNameRange     '6.0.58',
+433 silly addNameRange     '6.0.59',
+433 silly addNameRange     '4.2.0',
+433 silly addNameRange     '0.12.0',
+433 silly addNameRange     '7.0.0',
+433 silly addNameRange     '6.0.60',
+433 silly addNameRange     '7.0.1',
+433 silly addNameRange     '6.0.61',
+433 silly addNameRange     '7.0.2',
+433 silly addNameRange     '7.0.3',
+433 silly addNameRange     '7.0.4',
+433 silly addNameRange     '4.2.1',
+433 silly addNameRange     '6.0.62',
+433 silly addNameRange     '7.0.5',
+433 silly addNameRange     '6.0.63',
+433 silly addNameRange     '4.2.2',
+433 silly addNameRange     '0.12.1',
+433 silly addNameRange     '4.2.3',
+433 silly addNameRange     '6.0.64',
+433 silly addNameRange     '7.0.6',
+433 silly addNameRange     '6.0.65',
+433 silly addNameRange     '7.0.7',
+433 silly addNameRange     '7.0.8',
+433 silly addNameRange     '4.2.4',
+433 silly addNameRange     '0.12.2',
+433 silly addNameRange     '6.0.66',
+433 silly addNameRange     '7.0.9',
+433 silly addNameRange     '7.0.10',
+433 silly addNameRange     '7.0.11',
+433 silly addNameRange     '6.0.67',
+433 silly addNameRange     '6.0.68',
+433 silly addNameRange     '7.0.12',
+433 silly addNameRange     '4.2.5',
+433 silly addNameRange     '0.12.3',
+433 silly addNameRange     '6.0.69',
+433 silly addNameRange     '0.12.4',
+433 silly addNameRange     '4.2.6',
+433 silly addNameRange     '6.0.70',
+433 silly addNameRange     '7.0.13',
+433 silly addNameRange     '7.0.14',
+433 silly addNameRange     '6.0.71',
+433 silly addNameRange     '7.0.15',
+433 silly addNameRange     '4.2.7',
+433 silly addNameRange     '6.0.72',
+433 silly addNameRange     '7.0.16',
+433 silly addNameRange     '7.0.17',
+433 silly addNameRange     '7.0.18',
+433 silly addNameRange     '4.2.8',
+433 silly addNameRange     '6.0.73',
+433 silly addNameRange     '7.0.19',
+433 silly addNameRange     '7.0.20',
+433 silly addNameRange     '7.0.21',
+433 silly addNameRange     '7.0.22',
+433 silly addNameRange     '6.0.74',
+433 silly addNameRange     '7.0.23',
+433 silly addNameRange     '7.0.24',
+433 silly addNameRange     '6.0.75',
+433 silly addNameRange     ... 1269 more items ] ]
+434 silly addNamed @types/node@18.0.3
+435 verbose addNamed "18.0.3" is a plain semver version for @types/node
+436 silly mapToRegistry name @types/node
+437 silly mapToRegistry scope (from package name) @types
+438 verbose mapToRegistry no registry URL found in name for scope @types
+439 silly mapToRegistry using default registry
+440 silly mapToRegistry registry https://registry.npmjs.org/
+441 silly mapToRegistry uri https://registry.npmjs.org/@types%2fnode
+442 verbose addRemoteTarball https://registry.npmjs.org/@types/node/-/node-18.0.3.tgz not in flight; adding
+443 verbose addRemoteTarball [ 'https://registry.npmjs.org/@types/node/-/node-18.0.3.tgz',
+443 verbose addRemoteTarball   '463fc47f13ec0688a33aec75d078a0541a447199' ]
+444 info retry fetch attempt 1 at 10:28:58 AM
+445 info attempt registry request try #1 at 10:28:58 AM
+446 http fetch GET https://registry.npmjs.org/@types/node/-/node-18.0.3.tgz
+447 http fetch 200 https://registry.npmjs.org/@types/node/-/node-18.0.3.tgz
+448 silly fetchAndShaCheck shasum 463fc47f13ec0688a33aec75d078a0541a447199
+449 verbose addTmpTarball /tmp/npm-3224-e7ee46a1/registry.npmjs.org/_40types/node/-/node-18.0.3.tgz not in flight; adding
+450 verbose addTmpTarball already have metadata; skipping unpack for @types/node@18.0.3
+451 silly cache afterAdd @types/node@18.0.3
+452 verbose afterAdd /root/.npm/@types/node/18.0.3/package/package.json not in flight; writing
+453 verbose afterAdd /root/.npm/@types/node/18.0.3/package/package.json written
+454 silly fetchNamedPackageData tr46
+455 silly mapToRegistry name tr46
+456 silly mapToRegistry using default registry
+457 silly mapToRegistry registry https://registry.npmjs.org/
+458 silly mapToRegistry uri https://registry.npmjs.org/tr46
+459 silly fetchNamedPackageData webidl-conversions
+460 silly mapToRegistry name webidl-conversions
+461 silly mapToRegistry using default registry
+462 silly mapToRegistry registry https://registry.npmjs.org/
+463 silly mapToRegistry uri https://registry.npmjs.org/webidl-conversions
+464 verbose request uri https://registry.npmjs.org/tr46
+465 verbose request no auth needed
+466 info attempt registry request try #1 at 10:28:58 AM
+467 http request GET https://registry.npmjs.org/tr46
+468 verbose request uri https://registry.npmjs.org/webidl-conversions
+469 verbose request no auth needed
+470 info attempt registry request try #1 at 10:28:58 AM
+471 http request GET https://registry.npmjs.org/webidl-conversions
+472 http 200 https://registry.npmjs.org/webidl-conversions
+473 verbose headers { date: 'Fri, 08 Jul 2022 10:28:58 GMT',
+473 verbose headers   'content-type': 'application/json',
+473 verbose headers   'transfer-encoding': 'chunked',
+473 verbose headers   connection: 'keep-alive',
+473 verbose headers   'cf-ray': '727822db289f60b3-SEA',
+473 verbose headers   'access-control-allow-origin': '*',
+473 verbose headers   age: '144',
+473 verbose headers   'cache-control': 'public, max-age=300',
+473 verbose headers   etag: 'W/"d1826742ecdf3fdd15e3e9411e8bcf45"',
+473 verbose headers   'last-modified': 'Tue, 28 Jun 2022 23:27:49 GMT',
+473 verbose headers   vary: 'accept-encoding, accept',
+473 verbose headers   'cf-cache-status': 'HIT',
+473 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+473 verbose headers   'x-amz-replication-status': 'PENDING',
+473 verbose headers   server: 'cloudflare',
+473 verbose headers   'content-encoding': 'gzip' }
+474 silly get cb [ 200,
+474 silly get   { date: 'Fri, 08 Jul 2022 10:28:58 GMT',
+474 silly get     'content-type': 'application/json',
+474 silly get     'transfer-encoding': 'chunked',
+474 silly get     connection: 'keep-alive',
+474 silly get     'cf-ray': '727822db289f60b3-SEA',
+474 silly get     'access-control-allow-origin': '*',
+474 silly get     age: '144',
+474 silly get     'cache-control': 'public, max-age=300',
+474 silly get     etag: 'W/"d1826742ecdf3fdd15e3e9411e8bcf45"',
+474 silly get     'last-modified': 'Tue, 28 Jun 2022 23:27:49 GMT',
+474 silly get     vary: 'accept-encoding, accept',
+474 silly get     'cf-cache-status': 'HIT',
+474 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+474 silly get     'x-amz-replication-status': 'PENDING',
+474 silly get     server: 'cloudflare',
+474 silly get     'content-encoding': 'gzip' } ]
+475 verbose get saving webidl-conversions to /root/.npm/registry.npmjs.org/webidl-conversions/.cache.json
+476 http 200 https://registry.npmjs.org/tr46
+477 verbose headers { date: 'Fri, 08 Jul 2022 10:28:58 GMT',
+477 verbose headers   'content-type': 'application/json',
+477 verbose headers   'transfer-encoding': 'chunked',
+477 verbose headers   connection: 'keep-alive',
+477 verbose headers   'cf-ray': '727822db2e95e141-SEA',
+477 verbose headers   'access-control-allow-origin': '*',
+477 verbose headers   age: '103',
+477 verbose headers   'cache-control': 'public, max-age=300',
+477 verbose headers   etag: 'W/"006fabc17f73385ff751880dc9704cba"',
+477 verbose headers   'last-modified': 'Mon, 27 Jun 2022 19:31:11 GMT',
+477 verbose headers   vary: 'accept-encoding, accept',
+477 verbose headers   'cf-cache-status': 'HIT',
+477 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+477 verbose headers   'x-amz-replication-status': 'PENDING',
+477 verbose headers   server: 'cloudflare',
+477 verbose headers   'content-encoding': 'gzip' }
+478 silly get cb [ 200,
+478 silly get   { date: 'Fri, 08 Jul 2022 10:28:58 GMT',
+478 silly get     'content-type': 'application/json',
+478 silly get     'transfer-encoding': 'chunked',
+478 silly get     connection: 'keep-alive',
+478 silly get     'cf-ray': '727822db2e95e141-SEA',
+478 silly get     'access-control-allow-origin': '*',
+478 silly get     age: '103',
+478 silly get     'cache-control': 'public, max-age=300',
+478 silly get     etag: 'W/"006fabc17f73385ff751880dc9704cba"',
+478 silly get     'last-modified': 'Mon, 27 Jun 2022 19:31:11 GMT',
+478 silly get     vary: 'accept-encoding, accept',
+478 silly get     'cf-cache-status': 'HIT',
+478 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+478 silly get     'x-amz-replication-status': 'PENDING',
+478 silly get     server: 'cloudflare',
+478 silly get     'content-encoding': 'gzip' } ]
+479 verbose get saving tr46 to /root/.npm/registry.npmjs.org/tr46/.cache.json
+480 silly resolveWithNewModule webidl-conversions@7.0.0 checking installable status
+481 silly cache add args [ 'webidl-conversions@^7.0.0', null ]
+482 verbose cache add spec webidl-conversions@^7.0.0
+483 silly cache add parsed spec Result {
+483 silly cache add   raw: 'webidl-conversions@^7.0.0',
+483 silly cache add   scope: null,
+483 silly cache add   name: 'webidl-conversions',
+483 silly cache add   rawSpec: '^7.0.0',
+483 silly cache add   spec: '>=7.0.0 <8.0.0',
+483 silly cache add   type: 'range' }
+484 silly addNamed webidl-conversions@>=7.0.0 <8.0.0
+485 verbose addNamed ">=7.0.0 <8.0.0" is a valid semver range for webidl-conversions
+486 silly addNameRange { name: 'webidl-conversions',
+486 silly addNameRange   range: '>=7.0.0 <8.0.0',
+486 silly addNameRange   hasData: false }
+487 silly mapToRegistry name webidl-conversions
+488 silly mapToRegistry using default registry
+489 silly mapToRegistry registry https://registry.npmjs.org/
+490 silly mapToRegistry uri https://registry.npmjs.org/webidl-conversions
+491 verbose addNameRange registry:https://registry.npmjs.org/webidl-conversions not in flight; fetching
+492 silly resolveWithNewModule tr46@3.0.0 checking installable status
+493 silly cache add args [ 'tr46@^3.0.0', null ]
+494 verbose cache add spec tr46@^3.0.0
+495 silly cache add parsed spec Result {
+495 silly cache add   raw: 'tr46@^3.0.0',
+495 silly cache add   scope: null,
+495 silly cache add   name: 'tr46',
+495 silly cache add   rawSpec: '^3.0.0',
+495 silly cache add   spec: '>=3.0.0 <4.0.0',
+495 silly cache add   type: 'range' }
+496 silly addNamed tr46@>=3.0.0 <4.0.0
+497 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for tr46
+498 silly addNameRange { name: 'tr46', range: '>=3.0.0 <4.0.0', hasData: false }
+499 silly mapToRegistry name tr46
+500 silly mapToRegistry using default registry
+501 silly mapToRegistry registry https://registry.npmjs.org/
+502 silly mapToRegistry uri https://registry.npmjs.org/tr46
+503 verbose addNameRange registry:https://registry.npmjs.org/tr46 not in flight; fetching
+504 verbose get https://registry.npmjs.org/webidl-conversions not expired, no request
+505 silly addNameRange number 2 { name: 'webidl-conversions',
+505 silly addNameRange   range: '>=7.0.0 <8.0.0',
+505 silly addNameRange   hasData: true }
+506 silly addNameRange versions [ 'webidl-conversions',
+506 silly addNameRange   [ '1.0.0',
+506 silly addNameRange     '1.0.1',
+506 silly addNameRange     '1.1.0',
+506 silly addNameRange     '1.2.0',
+506 silly addNameRange     '1.2.1',
+506 silly addNameRange     '2.0.0',
+506 silly addNameRange     '2.0.1',
+506 silly addNameRange     '3.0.0',
+506 silly addNameRange     '3.0.1',
+506 silly addNameRange     '4.0.0',
+506 silly addNameRange     '4.0.1',
+506 silly addNameRange     '4.0.2',
+506 silly addNameRange     '5.0.0',
+506 silly addNameRange     '6.0.0',
+506 silly addNameRange     '6.1.0',
+506 silly addNameRange     '7.0.0' ] ]
+507 silly addNamed webidl-conversions@7.0.0
+508 verbose addNamed "7.0.0" is a plain semver version for webidl-conversions
+509 silly mapToRegistry name webidl-conversions
+510 silly mapToRegistry using default registry
+511 silly mapToRegistry registry https://registry.npmjs.org/
+512 silly mapToRegistry uri https://registry.npmjs.org/webidl-conversions
+513 verbose addRemoteTarball https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-7.0.0.tgz not in flight; adding
+514 verbose addRemoteTarball [ 'https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-7.0.0.tgz',
+514 verbose addRemoteTarball   '256b4e1882be7debbf01d05f0aa2039778ea080a' ]
+515 info retry fetch attempt 1 at 10:28:58 AM
+516 info attempt registry request try #1 at 10:28:58 AM
+517 http fetch GET https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-7.0.0.tgz
+518 verbose get https://registry.npmjs.org/tr46 not expired, no request
+519 silly addNameRange number 2 { name: 'tr46', range: '>=3.0.0 <4.0.0', hasData: true }
+520 silly addNameRange versions [ 'tr46',
+520 silly addNameRange   [ '0.0.1',
+520 silly addNameRange     '0.0.2',
+520 silly addNameRange     '0.0.3',
+520 silly addNameRange     '1.0.0',
+520 silly addNameRange     '1.0.1',
+520 silly addNameRange     '2.0.0',
+520 silly addNameRange     '2.0.1',
+520 silly addNameRange     '2.0.2',
+520 silly addNameRange     '2.1.0',
+520 silly addNameRange     '3.0.0' ] ]
+521 silly addNamed tr46@3.0.0
+522 verbose addNamed "3.0.0" is a plain semver version for tr46
+523 silly mapToRegistry name tr46
+524 silly mapToRegistry using default registry
+525 silly mapToRegistry registry https://registry.npmjs.org/
+526 silly mapToRegistry uri https://registry.npmjs.org/tr46
+527 verbose addRemoteTarball https://registry.npmjs.org/tr46/-/tr46-3.0.0.tgz not in flight; adding
+528 verbose addRemoteTarball [ 'https://registry.npmjs.org/tr46/-/tr46-3.0.0.tgz',
+528 verbose addRemoteTarball   '555c4e297a950617e8eeddef633c87d4d9d6cbf9' ]
+529 info retry fetch attempt 1 at 10:28:58 AM
+530 info attempt registry request try #1 at 10:28:58 AM
+531 http fetch GET https://registry.npmjs.org/tr46/-/tr46-3.0.0.tgz
+532 http fetch 200 https://registry.npmjs.org/tr46/-/tr46-3.0.0.tgz
+533 silly fetchAndShaCheck shasum 555c4e297a950617e8eeddef633c87d4d9d6cbf9
+534 http fetch 200 https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-7.0.0.tgz
+535 verbose addTmpTarball /tmp/npm-3224-e7ee46a1/registry.npmjs.org/tr46/-/tr46-3.0.0.tgz not in flight; adding
+536 verbose addTmpTarball already have metadata; skipping unpack for tr46@3.0.0
+537 silly fetchAndShaCheck shasum 256b4e1882be7debbf01d05f0aa2039778ea080a
+538 verbose addTmpTarball /tmp/npm-3224-e7ee46a1/registry.npmjs.org/webidl-conversions/-/webidl-conversions-7.0.0.tgz not in flight; adding
+539 verbose addTmpTarball already have metadata; skipping unpack for webidl-conversions@7.0.0
+540 silly cache afterAdd tr46@3.0.0
+541 verbose afterAdd /root/.npm/tr46/3.0.0/package/package.json not in flight; writing
+542 verbose afterAdd /root/.npm/tr46/3.0.0/package/package.json written
+543 silly cache afterAdd webidl-conversions@7.0.0
+544 verbose afterAdd /root/.npm/webidl-conversions/7.0.0/package/package.json not in flight; writing
+545 verbose afterAdd /root/.npm/webidl-conversions/7.0.0/package/package.json written
+546 silly fetchNamedPackageData punycode
+547 silly mapToRegistry name punycode
+548 silly mapToRegistry using default registry
+549 silly mapToRegistry registry https://registry.npmjs.org/
+550 silly mapToRegistry uri https://registry.npmjs.org/punycode
+551 verbose request uri https://registry.npmjs.org/punycode
+552 verbose request no auth needed
+553 info attempt registry request try #1 at 10:28:58 AM
+554 http request GET https://registry.npmjs.org/punycode
+555 http 200 https://registry.npmjs.org/punycode
+556 verbose headers { date: 'Fri, 08 Jul 2022 10:28:58 GMT',
+556 verbose headers   'content-type': 'application/json',
+556 verbose headers   'transfer-encoding': 'chunked',
+556 verbose headers   connection: 'keep-alive',
+556 verbose headers   'cf-ray': '727822dc29ea60b3-SEA',
+556 verbose headers   'access-control-allow-origin': '*',
+556 verbose headers   age: '165',
+556 verbose headers   'cache-control': 'public, max-age=300',
+556 verbose headers   etag: 'W/"6bd52e173aa0b98fb6e3305a2d352d76"',
+556 verbose headers   'last-modified': 'Sat, 25 Jun 2022 01:15:38 GMT',
+556 verbose headers   vary: 'accept-encoding, accept',
+556 verbose headers   'cf-cache-status': 'HIT',
+556 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+556 verbose headers   'x-amz-replication-status': 'PENDING',
+556 verbose headers   server: 'cloudflare',
+556 verbose headers   'content-encoding': 'gzip' }
+557 silly get cb [ 200,
+557 silly get   { date: 'Fri, 08 Jul 2022 10:28:58 GMT',
+557 silly get     'content-type': 'application/json',
+557 silly get     'transfer-encoding': 'chunked',
+557 silly get     connection: 'keep-alive',
+557 silly get     'cf-ray': '727822dc29ea60b3-SEA',
+557 silly get     'access-control-allow-origin': '*',
+557 silly get     age: '165',
+557 silly get     'cache-control': 'public, max-age=300',
+557 silly get     etag: 'W/"6bd52e173aa0b98fb6e3305a2d352d76"',
+557 silly get     'last-modified': 'Sat, 25 Jun 2022 01:15:38 GMT',
+557 silly get     vary: 'accept-encoding, accept',
+557 silly get     'cf-cache-status': 'HIT',
+557 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+557 silly get     'x-amz-replication-status': 'PENDING',
+557 silly get     server: 'cloudflare',
+557 silly get     'content-encoding': 'gzip' } ]
+558 verbose get saving punycode to /root/.npm/registry.npmjs.org/punycode/.cache.json
+559 silly resolveWithNewModule punycode@2.1.1 checking installable status
+560 silly cache add args [ 'punycode@^2.1.1', null ]
+561 verbose cache add spec punycode@^2.1.1
+562 silly cache add parsed spec Result {
+562 silly cache add   raw: 'punycode@^2.1.1',
+562 silly cache add   scope: null,
+562 silly cache add   name: 'punycode',
+562 silly cache add   rawSpec: '^2.1.1',
+562 silly cache add   spec: '>=2.1.1 <3.0.0',
+562 silly cache add   type: 'range' }
+563 silly addNamed punycode@>=2.1.1 <3.0.0
+564 verbose addNamed ">=2.1.1 <3.0.0" is a valid semver range for punycode
+565 silly addNameRange { name: 'punycode', range: '>=2.1.1 <3.0.0', hasData: false }
+566 silly mapToRegistry name punycode
+567 silly mapToRegistry using default registry
+568 silly mapToRegistry registry https://registry.npmjs.org/
+569 silly mapToRegistry uri https://registry.npmjs.org/punycode
+570 verbose addNameRange registry:https://registry.npmjs.org/punycode not in flight; fetching
+571 verbose get https://registry.npmjs.org/punycode not expired, no request
+572 silly addNameRange number 2 { name: 'punycode', range: '>=2.1.1 <3.0.0', hasData: true }
+573 silly addNameRange versions [ 'punycode',
+573 silly addNameRange   [ '0.0.1',
+573 silly addNameRange     '0.0.2',
+573 silly addNameRange     '0.0.1337',
+573 silly addNameRange     '0.1.0',
+573 silly addNameRange     '0.1.1',
+573 silly addNameRange     '0.1.2',
+573 silly addNameRange     '0.2.0',
+573 silly addNameRange     '0.2.1',
+573 silly addNameRange     '0.2.2',
+573 silly addNameRange     '0.3.0',
+573 silly addNameRange     '1.0.0',
+573 silly addNameRange     '1.1.0',
+573 silly addNameRange     '1.1.1',
+573 silly addNameRange     '1.2.0',
+573 silly addNameRange     '1.2.1',
+573 silly addNameRange     '1.2.2',
+573 silly addNameRange     '1.2.3',
+573 silly addNameRange     '1.2.4',
+573 silly addNameRange     '1.3.0',
+573 silly addNameRange     '1.3.1',
+573 silly addNameRange     '1.3.2',
+573 silly addNameRange     '1.4.0',
+573 silly addNameRange     '1.4.1',
+573 silly addNameRange     '2.0.0',
+573 silly addNameRange     '2.0.1',
+573 silly addNameRange     '2.1.0',
+573 silly addNameRange     '2.1.1' ] ]
+574 silly addNamed punycode@2.1.1
+575 verbose addNamed "2.1.1" is a plain semver version for punycode
+576 silly mapToRegistry name punycode
+577 silly mapToRegistry using default registry
+578 silly mapToRegistry registry https://registry.npmjs.org/
+579 silly mapToRegistry uri https://registry.npmjs.org/punycode
+580 verbose addRemoteTarball https://registry.npmjs.org/punycode/-/punycode-2.1.1.tgz not in flight; adding
+581 verbose addRemoteTarball [ 'https://registry.npmjs.org/punycode/-/punycode-2.1.1.tgz',
+581 verbose addRemoteTarball   'b58b010ac40c22c5657616c8d2c2c02c7bf479ec' ]
+582 info retry fetch attempt 1 at 10:28:58 AM
+583 info attempt registry request try #1 at 10:28:58 AM
+584 http fetch GET https://registry.npmjs.org/punycode/-/punycode-2.1.1.tgz
+585 http fetch 200 https://registry.npmjs.org/punycode/-/punycode-2.1.1.tgz
+586 silly fetchAndShaCheck shasum b58b010ac40c22c5657616c8d2c2c02c7bf479ec
+587 verbose addTmpTarball /tmp/npm-3224-e7ee46a1/registry.npmjs.org/punycode/-/punycode-2.1.1.tgz not in flight; adding
+588 verbose addTmpTarball already have metadata; skipping unpack for punycode@2.1.1
+589 silly cache afterAdd punycode@2.1.1
+590 verbose afterAdd /root/.npm/punycode/2.1.1/package/package.json not in flight; writing
+591 verbose afterAdd /root/.npm/punycode/2.1.1/package/package.json written
+592 silly fetchNamedPackageData sparse-bitfield
+593 silly mapToRegistry name sparse-bitfield
+594 silly mapToRegistry using default registry
+595 silly mapToRegistry registry https://registry.npmjs.org/
+596 silly mapToRegistry uri https://registry.npmjs.org/sparse-bitfield
+597 verbose request uri https://registry.npmjs.org/sparse-bitfield
+598 verbose request no auth needed
+599 info attempt registry request try #1 at 10:28:59 AM
+600 http request GET https://registry.npmjs.org/sparse-bitfield
+601 http 200 https://registry.npmjs.org/sparse-bitfield
+602 verbose headers { date: 'Fri, 08 Jul 2022 10:28:59 GMT',
+602 verbose headers   'content-type': 'application/json',
+602 verbose headers   'transfer-encoding': 'chunked',
+602 verbose headers   connection: 'keep-alive',
+602 verbose headers   'cf-ray': '727822dd18e1683e-SEA',
+602 verbose headers   'access-control-allow-origin': '*',
+602 verbose headers   'cache-control': 'public, max-age=300',
+602 verbose headers   etag: 'W/"ec9075c701d245a17e4124235c3de850"',
+602 verbose headers   'last-modified': 'Sun, 26 Jun 2022 22:36:40 GMT',
+602 verbose headers   vary: 'accept-encoding, accept',
+602 verbose headers   'cf-cache-status': 'REVALIDATED',
+602 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+602 verbose headers   'x-amz-replication-status': 'COMPLETED',
+602 verbose headers   server: 'cloudflare',
+602 verbose headers   'content-encoding': 'gzip' }
+603 silly get cb [ 200,
+603 silly get   { date: 'Fri, 08 Jul 2022 10:28:59 GMT',
+603 silly get     'content-type': 'application/json',
+603 silly get     'transfer-encoding': 'chunked',
+603 silly get     connection: 'keep-alive',
+603 silly get     'cf-ray': '727822dd18e1683e-SEA',
+603 silly get     'access-control-allow-origin': '*',
+603 silly get     'cache-control': 'public, max-age=300',
+603 silly get     etag: 'W/"ec9075c701d245a17e4124235c3de850"',
+603 silly get     'last-modified': 'Sun, 26 Jun 2022 22:36:40 GMT',
+603 silly get     vary: 'accept-encoding, accept',
+603 silly get     'cf-cache-status': 'REVALIDATED',
+603 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+603 silly get     'x-amz-replication-status': 'COMPLETED',
+603 silly get     server: 'cloudflare',
+603 silly get     'content-encoding': 'gzip' } ]
+604 verbose get saving sparse-bitfield to /root/.npm/registry.npmjs.org/sparse-bitfield/.cache.json
+605 silly resolveWithNewModule sparse-bitfield@3.0.3 checking installable status
+606 silly cache add args [ 'sparse-bitfield@^3.0.3', null ]
+607 verbose cache add spec sparse-bitfield@^3.0.3
+608 silly cache add parsed spec Result {
+608 silly cache add   raw: 'sparse-bitfield@^3.0.3',
+608 silly cache add   scope: null,
+608 silly cache add   name: 'sparse-bitfield',
+608 silly cache add   rawSpec: '^3.0.3',
+608 silly cache add   spec: '>=3.0.3 <4.0.0',
+608 silly cache add   type: 'range' }
+609 silly addNamed sparse-bitfield@>=3.0.3 <4.0.0
+610 verbose addNamed ">=3.0.3 <4.0.0" is a valid semver range for sparse-bitfield
+611 silly addNameRange { name: 'sparse-bitfield',
+611 silly addNameRange   range: '>=3.0.3 <4.0.0',
+611 silly addNameRange   hasData: false }
+612 silly mapToRegistry name sparse-bitfield
+613 silly mapToRegistry using default registry
+614 silly mapToRegistry registry https://registry.npmjs.org/
+615 silly mapToRegistry uri https://registry.npmjs.org/sparse-bitfield
+616 verbose addNameRange registry:https://registry.npmjs.org/sparse-bitfield not in flight; fetching
+617 verbose get https://registry.npmjs.org/sparse-bitfield not expired, no request
+618 silly addNameRange number 2 { name: 'sparse-bitfield',
+618 silly addNameRange   range: '>=3.0.3 <4.0.0',
+618 silly addNameRange   hasData: true }
+619 silly addNameRange versions [ 'sparse-bitfield',
+619 silly addNameRange   [ '1.0.0',
+619 silly addNameRange     '2.0.0',
+619 silly addNameRange     '2.0.1',
+619 silly addNameRange     '2.0.2',
+619 silly addNameRange     '2.1.0',
+619 silly addNameRange     '2.2.0',
+619 silly addNameRange     '3.0.0',
+619 silly addNameRange     '3.0.1',
+619 silly addNameRange     '3.0.2',
+619 silly addNameRange     '3.0.3' ] ]
+620 silly addNamed sparse-bitfield@3.0.3
+621 verbose addNamed "3.0.3" is a plain semver version for sparse-bitfield
+622 silly mapToRegistry name sparse-bitfield
+623 silly mapToRegistry using default registry
+624 silly mapToRegistry registry https://registry.npmjs.org/
+625 silly mapToRegistry uri https://registry.npmjs.org/sparse-bitfield
+626 verbose addRemoteTarball https://registry.npmjs.org/sparse-bitfield/-/sparse-bitfield-3.0.3.tgz not in flight; adding
+627 verbose addRemoteTarball [ 'https://registry.npmjs.org/sparse-bitfield/-/sparse-bitfield-3.0.3.tgz',
+627 verbose addRemoteTarball   'ff4ae6e68656056ba4b3e792ab3334d38273ca11' ]
+628 info retry fetch attempt 1 at 10:28:59 AM
+629 info attempt registry request try #1 at 10:28:59 AM
+630 http fetch GET https://registry.npmjs.org/sparse-bitfield/-/sparse-bitfield-3.0.3.tgz
+631 http fetch 200 https://registry.npmjs.org/sparse-bitfield/-/sparse-bitfield-3.0.3.tgz
+632 silly fetchAndShaCheck shasum ff4ae6e68656056ba4b3e792ab3334d38273ca11
+633 verbose addTmpTarball /tmp/npm-3224-e7ee46a1/registry.npmjs.org/sparse-bitfield/-/sparse-bitfield-3.0.3.tgz not in flight; adding
+634 verbose addTmpTarball already have metadata; skipping unpack for sparse-bitfield@3.0.3
+635 silly cache afterAdd sparse-bitfield@3.0.3
+636 verbose afterAdd /root/.npm/sparse-bitfield/3.0.3/package/package.json not in flight; writing
+637 verbose afterAdd /root/.npm/sparse-bitfield/3.0.3/package/package.json written
+638 silly fetchNamedPackageData memory-pager
+639 silly mapToRegistry name memory-pager
+640 silly mapToRegistry using default registry
+641 silly mapToRegistry registry https://registry.npmjs.org/
+642 silly mapToRegistry uri https://registry.npmjs.org/memory-pager
+643 verbose request uri https://registry.npmjs.org/memory-pager
+644 verbose request no auth needed
+645 info attempt registry request try #1 at 10:28:59 AM
+646 http request GET https://registry.npmjs.org/memory-pager
+647 http 200 https://registry.npmjs.org/memory-pager
+648 verbose headers { date: 'Fri, 08 Jul 2022 10:28:59 GMT',
+648 verbose headers   'content-type': 'application/json',
+648 verbose headers   'transfer-encoding': 'chunked',
+648 verbose headers   connection: 'keep-alive',
+648 verbose headers   'cf-ray': '727822de0c6f60b3-SEA',
+648 verbose headers   'access-control-allow-origin': '*',
+648 verbose headers   age: '165',
+648 verbose headers   'cache-control': 'public, max-age=300',
+648 verbose headers   etag: 'W/"47aee91f910981766646ddbd7047969c"',
+648 verbose headers   'last-modified': 'Sun, 19 Jun 2022 17:46:27 GMT',
+648 verbose headers   vary: 'accept-encoding, accept',
+648 verbose headers   'cf-cache-status': 'HIT',
+648 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+648 verbose headers   'x-amz-replication-status': 'COMPLETED',
+648 verbose headers   server: 'cloudflare',
+648 verbose headers   'content-encoding': 'gzip' }
+649 silly get cb [ 200,
+649 silly get   { date: 'Fri, 08 Jul 2022 10:28:59 GMT',
+649 silly get     'content-type': 'application/json',
+649 silly get     'transfer-encoding': 'chunked',
+649 silly get     connection: 'keep-alive',
+649 silly get     'cf-ray': '727822de0c6f60b3-SEA',
+649 silly get     'access-control-allow-origin': '*',
+649 silly get     age: '165',
+649 silly get     'cache-control': 'public, max-age=300',
+649 silly get     etag: 'W/"47aee91f910981766646ddbd7047969c"',
+649 silly get     'last-modified': 'Sun, 19 Jun 2022 17:46:27 GMT',
+649 silly get     vary: 'accept-encoding, accept',
+649 silly get     'cf-cache-status': 'HIT',
+649 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+649 silly get     'x-amz-replication-status': 'COMPLETED',
+649 silly get     server: 'cloudflare',
+649 silly get     'content-encoding': 'gzip' } ]
+650 verbose get saving memory-pager to /root/.npm/registry.npmjs.org/memory-pager/.cache.json
+651 silly resolveWithNewModule memory-pager@1.5.0 checking installable status
+652 silly cache add args [ 'memory-pager@^1.0.2', null ]
+653 verbose cache add spec memory-pager@^1.0.2
+654 silly cache add parsed spec Result {
+654 silly cache add   raw: 'memory-pager@^1.0.2',
+654 silly cache add   scope: null,
+654 silly cache add   name: 'memory-pager',
+654 silly cache add   rawSpec: '^1.0.2',
+654 silly cache add   spec: '>=1.0.2 <2.0.0',
+654 silly cache add   type: 'range' }
+655 silly addNamed memory-pager@>=1.0.2 <2.0.0
+656 verbose addNamed ">=1.0.2 <2.0.0" is a valid semver range for memory-pager
+657 silly addNameRange { name: 'memory-pager', range: '>=1.0.2 <2.0.0', hasData: false }
+658 silly mapToRegistry name memory-pager
+659 silly mapToRegistry using default registry
+660 silly mapToRegistry registry https://registry.npmjs.org/
+661 silly mapToRegistry uri https://registry.npmjs.org/memory-pager
+662 verbose addNameRange registry:https://registry.npmjs.org/memory-pager not in flight; fetching
+663 verbose get https://registry.npmjs.org/memory-pager not expired, no request
+664 silly addNameRange number 2 { name: 'memory-pager', range: '>=1.0.2 <2.0.0', hasData: true }
+665 silly addNameRange versions [ 'memory-pager',
+665 silly addNameRange   [ '1.0.0',
+665 silly addNameRange     '1.0.1',
+665 silly addNameRange     '1.0.2',
+665 silly addNameRange     '1.0.3',
+665 silly addNameRange     '1.1.0',
+665 silly addNameRange     '1.2.0',
+665 silly addNameRange     '1.3.0',
+665 silly addNameRange     '1.3.1',
+665 silly addNameRange     '1.4.0',
+665 silly addNameRange     '1.5.0' ] ]
+666 silly addNamed memory-pager@1.5.0
+667 verbose addNamed "1.5.0" is a plain semver version for memory-pager
+668 silly mapToRegistry name memory-pager
+669 silly mapToRegistry using default registry
+670 silly mapToRegistry registry https://registry.npmjs.org/
+671 silly mapToRegistry uri https://registry.npmjs.org/memory-pager
+672 verbose addRemoteTarball https://registry.npmjs.org/memory-pager/-/memory-pager-1.5.0.tgz not in flight; adding
+673 verbose addRemoteTarball [ 'https://registry.npmjs.org/memory-pager/-/memory-pager-1.5.0.tgz',
+673 verbose addRemoteTarball   'd8751655d22d384682741c972f2c3d6dfa3e66b5' ]
+674 info retry fetch attempt 1 at 10:28:59 AM
+675 info attempt registry request try #1 at 10:28:59 AM
+676 http fetch GET https://registry.npmjs.org/memory-pager/-/memory-pager-1.5.0.tgz
+677 http fetch 200 https://registry.npmjs.org/memory-pager/-/memory-pager-1.5.0.tgz
+678 silly fetchAndShaCheck shasum d8751655d22d384682741c972f2c3d6dfa3e66b5
+679 verbose addTmpTarball /tmp/npm-3224-e7ee46a1/registry.npmjs.org/memory-pager/-/memory-pager-1.5.0.tgz not in flight; adding
+680 verbose addTmpTarball already have metadata; skipping unpack for memory-pager@1.5.0
+681 silly cache afterAdd memory-pager@1.5.0
+682 verbose afterAdd /root/.npm/memory-pager/1.5.0/package/package.json not in flight; writing
+683 verbose afterAdd /root/.npm/memory-pager/1.5.0/package/package.json written
+684 silly fetchNamedPackageData ip
+685 silly mapToRegistry name ip
+686 silly mapToRegistry using default registry
+687 silly mapToRegistry registry https://registry.npmjs.org/
+688 silly mapToRegistry uri https://registry.npmjs.org/ip
+689 silly fetchNamedPackageData smart-buffer
+690 silly mapToRegistry name smart-buffer
+691 silly mapToRegistry using default registry
+692 silly mapToRegistry registry https://registry.npmjs.org/
+693 silly mapToRegistry uri https://registry.npmjs.org/smart-buffer
+694 verbose request uri https://registry.npmjs.org/ip
+695 verbose request no auth needed
+696 info attempt registry request try #1 at 10:28:59 AM
+697 http request GET https://registry.npmjs.org/ip
+698 verbose request uri https://registry.npmjs.org/smart-buffer
+699 verbose request no auth needed
+700 info attempt registry request try #1 at 10:28:59 AM
+701 http request GET https://registry.npmjs.org/smart-buffer
+702 http 200 https://registry.npmjs.org/ip
+703 verbose headers { date: 'Fri, 08 Jul 2022 10:28:59 GMT',
+703 verbose headers   'content-type': 'application/json',
+703 verbose headers   'transfer-encoding': 'chunked',
+703 verbose headers   connection: 'keep-alive',
+703 verbose headers   'cf-ray': '727822deeb0a683e-SEA',
+703 verbose headers   'access-control-allow-origin': '*',
+703 verbose headers   age: '163',
+703 verbose headers   'cache-control': 'public, max-age=300',
+703 verbose headers   etag: 'W/"7294876cff800cdf69dee91806ccb68d"',
+703 verbose headers   'last-modified': 'Sun, 19 Jun 2022 02:20:55 GMT',
+703 verbose headers   vary: 'accept-encoding, accept',
+703 verbose headers   'cf-cache-status': 'HIT',
+703 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+703 verbose headers   'x-amz-replication-status': 'COMPLETED',
+703 verbose headers   server: 'cloudflare',
+703 verbose headers   'content-encoding': 'gzip' }
+704 silly get cb [ 200,
+704 silly get   { date: 'Fri, 08 Jul 2022 10:28:59 GMT',
+704 silly get     'content-type': 'application/json',
+704 silly get     'transfer-encoding': 'chunked',
+704 silly get     connection: 'keep-alive',
+704 silly get     'cf-ray': '727822deeb0a683e-SEA',
+704 silly get     'access-control-allow-origin': '*',
+704 silly get     age: '163',
+704 silly get     'cache-control': 'public, max-age=300',
+704 silly get     etag: 'W/"7294876cff800cdf69dee91806ccb68d"',
+704 silly get     'last-modified': 'Sun, 19 Jun 2022 02:20:55 GMT',
+704 silly get     vary: 'accept-encoding, accept',
+704 silly get     'cf-cache-status': 'HIT',
+704 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+704 silly get     'x-amz-replication-status': 'COMPLETED',
+704 silly get     server: 'cloudflare',
+704 silly get     'content-encoding': 'gzip' } ]
+705 verbose get saving ip to /root/.npm/registry.npmjs.org/ip/.cache.json
+706 silly resolveWithNewModule ip@1.1.8 checking installable status
+707 silly cache add args [ 'ip@^1.1.5', null ]
+708 verbose cache add spec ip@^1.1.5
+709 silly cache add parsed spec Result {
+709 silly cache add   raw: 'ip@^1.1.5',
+709 silly cache add   scope: null,
+709 silly cache add   name: 'ip',
+709 silly cache add   rawSpec: '^1.1.5',
+709 silly cache add   spec: '>=1.1.5 <2.0.0',
+709 silly cache add   type: 'range' }
+710 silly addNamed ip@>=1.1.5 <2.0.0
+711 verbose addNamed ">=1.1.5 <2.0.0" is a valid semver range for ip
+712 silly addNameRange { name: 'ip', range: '>=1.1.5 <2.0.0', hasData: false }
+713 silly mapToRegistry name ip
+714 silly mapToRegistry using default registry
+715 silly mapToRegistry registry https://registry.npmjs.org/
+716 silly mapToRegistry uri https://registry.npmjs.org/ip
+717 verbose addNameRange registry:https://registry.npmjs.org/ip not in flight; fetching
+718 http 200 https://registry.npmjs.org/smart-buffer
+719 verbose headers { date: 'Fri, 08 Jul 2022 10:28:59 GMT',
+719 verbose headers   'content-type': 'application/json',
+719 verbose headers   'transfer-encoding': 'chunked',
+719 verbose headers   connection: 'keep-alive',
+719 verbose headers   'cf-ray': '727822dee81039a8-SEA',
+719 verbose headers   'access-control-allow-origin': '*',
+719 verbose headers   age: '95',
+719 verbose headers   'cache-control': 'public, max-age=300',
+719 verbose headers   etag: 'W/"c7fe821f9877c2e11987712fcb284bc6"',
+719 verbose headers   'last-modified': 'Sun, 26 Jun 2022 21:17:33 GMT',
+719 verbose headers   vary: 'accept-encoding, accept',
+719 verbose headers   'cf-cache-status': 'HIT',
+719 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+719 verbose headers   'x-amz-replication-status': 'PENDING',
+719 verbose headers   server: 'cloudflare',
+719 verbose headers   'content-encoding': 'gzip' }
+720 silly get cb [ 200,
+720 silly get   { date: 'Fri, 08 Jul 2022 10:28:59 GMT',
+720 silly get     'content-type': 'application/json',
+720 silly get     'transfer-encoding': 'chunked',
+720 silly get     connection: 'keep-alive',
+720 silly get     'cf-ray': '727822dee81039a8-SEA',
+720 silly get     'access-control-allow-origin': '*',
+720 silly get     age: '95',
+720 silly get     'cache-control': 'public, max-age=300',
+720 silly get     etag: 'W/"c7fe821f9877c2e11987712fcb284bc6"',
+720 silly get     'last-modified': 'Sun, 26 Jun 2022 21:17:33 GMT',
+720 silly get     vary: 'accept-encoding, accept',
+720 silly get     'cf-cache-status': 'HIT',
+720 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+720 silly get     'x-amz-replication-status': 'PENDING',
+720 silly get     server: 'cloudflare',
+720 silly get     'content-encoding': 'gzip' } ]
+721 verbose get saving smart-buffer to /root/.npm/registry.npmjs.org/smart-buffer/.cache.json
+722 verbose get https://registry.npmjs.org/ip not expired, no request
+723 silly addNameRange number 2 { name: 'ip', range: '>=1.1.5 <2.0.0', hasData: true }
+724 silly addNameRange versions [ 'ip',
+724 silly addNameRange   [ '0.0.1',
+724 silly addNameRange     '0.0.2',
+724 silly addNameRange     '0.0.3',
+724 silly addNameRange     '0.0.4',
+724 silly addNameRange     '0.0.5',
+724 silly addNameRange     '0.1.0',
+724 silly addNameRange     '0.2.0',
+724 silly addNameRange     '0.3.0',
+724 silly addNameRange     '0.3.1',
+724 silly addNameRange     '0.3.2',
+724 silly addNameRange     '0.3.3',
+724 silly addNameRange     '1.0.0',
+724 silly addNameRange     '1.0.1',
+724 silly addNameRange     '1.0.2',
+724 silly addNameRange     '1.1.0',
+724 silly addNameRange     '1.1.1',
+724 silly addNameRange     '1.1.2',
+724 silly addNameRange     '1.1.3',
+724 silly addNameRange     '1.1.4',
+724 silly addNameRange     '1.1.5',
+724 silly addNameRange     '1.1.6',
+724 silly addNameRange     '2.0.0',
+724 silly addNameRange     '1.1.7',
+724 silly addNameRange     '1.1.8' ] ]
+725 silly addNamed ip@1.1.8
+726 verbose addNamed "1.1.8" is a plain semver version for ip
+727 silly mapToRegistry name ip
+728 silly mapToRegistry using default registry
+729 silly mapToRegistry registry https://registry.npmjs.org/
+730 silly mapToRegistry uri https://registry.npmjs.org/ip
+731 verbose addRemoteTarball https://registry.npmjs.org/ip/-/ip-1.1.8.tgz not in flight; adding
+732 verbose addRemoteTarball [ 'https://registry.npmjs.org/ip/-/ip-1.1.8.tgz',
+732 verbose addRemoteTarball   'ae05948f6b075435ed3307acce04629da8cdbf48' ]
+733 info retry fetch attempt 1 at 10:28:59 AM
+734 info attempt registry request try #1 at 10:28:59 AM
+735 http fetch GET https://registry.npmjs.org/ip/-/ip-1.1.8.tgz
+736 silly resolveWithNewModule smart-buffer@4.2.0 checking installable status
+737 silly cache add args [ 'smart-buffer@^4.2.0', null ]
+738 verbose cache add spec smart-buffer@^4.2.0
+739 silly cache add parsed spec Result {
+739 silly cache add   raw: 'smart-buffer@^4.2.0',
+739 silly cache add   scope: null,
+739 silly cache add   name: 'smart-buffer',
+739 silly cache add   rawSpec: '^4.2.0',
+739 silly cache add   spec: '>=4.2.0 <5.0.0',
+739 silly cache add   type: 'range' }
+740 silly addNamed smart-buffer@>=4.2.0 <5.0.0
+741 verbose addNamed ">=4.2.0 <5.0.0" is a valid semver range for smart-buffer
+742 silly addNameRange { name: 'smart-buffer', range: '>=4.2.0 <5.0.0', hasData: false }
+743 silly mapToRegistry name smart-buffer
+744 silly mapToRegistry using default registry
+745 silly mapToRegistry registry https://registry.npmjs.org/
+746 silly mapToRegistry uri https://registry.npmjs.org/smart-buffer
+747 verbose addNameRange registry:https://registry.npmjs.org/smart-buffer not in flight; fetching
+748 verbose get https://registry.npmjs.org/smart-buffer not expired, no request
+749 silly addNameRange number 2 { name: 'smart-buffer', range: '>=4.2.0 <5.0.0', hasData: true }
+750 silly addNameRange versions [ 'smart-buffer',
+750 silly addNameRange   [ '1.0.0',
+750 silly addNameRange     '1.0.1',
+750 silly addNameRange     '1.0.3',
+750 silly addNameRange     '1.0.4',
+750 silly addNameRange     '1.0.5',
+750 silly addNameRange     '1.0.6',
+750 silly addNameRange     '1.0.7',
+750 silly addNameRange     '1.0.8',
+750 silly addNameRange     '1.0.9',
+750 silly addNameRange     '1.0.10',
+750 silly addNameRange     '1.0.11',
+750 silly addNameRange     '1.0.13',
+750 silly addNameRange     '1.1.0',
+750 silly addNameRange     '1.1.1',
+750 silly addNameRange     '1.1.2',
+750 silly addNameRange     '1.1.3',
+750 silly addNameRange     '1.1.4',
+750 silly addNameRange     '2.0.0',
+750 silly addNameRange     '1.1.15',
+750 silly addNameRange     '2.0.1',
+750 silly addNameRange     '2.0.2',
+750 silly addNameRange     '2.0.3',
+750 silly addNameRange     '3.0.0',
+750 silly addNameRange     '3.0.1',
+750 silly addNameRange     '3.0.2',
+750 silly addNameRange     '3.0.3',
+750 silly addNameRange     '4.0.0-beta.1',
+750 silly addNameRange     '4.0.0',
+750 silly addNameRange     '4.0.1',
+750 silly addNameRange     '4.0.2',
+750 silly addNameRange     '4.1.0',
+750 silly addNameRange     '4.2.0' ] ]
+751 silly addNamed smart-buffer@4.2.0
+752 verbose addNamed "4.2.0" is a plain semver version for smart-buffer
+753 silly mapToRegistry name smart-buffer
+754 silly mapToRegistry using default registry
+755 silly mapToRegistry registry https://registry.npmjs.org/
+756 silly mapToRegistry uri https://registry.npmjs.org/smart-buffer
+757 verbose addRemoteTarball https://registry.npmjs.org/smart-buffer/-/smart-buffer-4.2.0.tgz not in flight; adding
+758 verbose addRemoteTarball [ 'https://registry.npmjs.org/smart-buffer/-/smart-buffer-4.2.0.tgz',
+758 verbose addRemoteTarball   '6e1d71fa4f18c05f7d0ff216dd16a481d0e8d9ae' ]
+759 info retry fetch attempt 1 at 10:28:59 AM
+760 info attempt registry request try #1 at 10:28:59 AM
+761 http fetch GET https://registry.npmjs.org/smart-buffer/-/smart-buffer-4.2.0.tgz
+762 http fetch 200 https://registry.npmjs.org/ip/-/ip-1.1.8.tgz
+763 silly fetchAndShaCheck shasum ae05948f6b075435ed3307acce04629da8cdbf48
+764 verbose addTmpTarball /tmp/npm-3224-e7ee46a1/registry.npmjs.org/ip/-/ip-1.1.8.tgz not in flight; adding
+765 verbose addTmpTarball already have metadata; skipping unpack for ip@1.1.8
+766 http fetch 200 https://registry.npmjs.org/smart-buffer/-/smart-buffer-4.2.0.tgz
+767 silly cache afterAdd ip@1.1.8
+768 verbose afterAdd /root/.npm/ip/1.1.8/package/package.json not in flight; writing
+769 verbose afterAdd /root/.npm/ip/1.1.8/package/package.json written
+770 silly fetchAndShaCheck shasum 6e1d71fa4f18c05f7d0ff216dd16a481d0e8d9ae
+771 verbose addTmpTarball /tmp/npm-3224-e7ee46a1/registry.npmjs.org/smart-buffer/-/smart-buffer-4.2.0.tgz not in flight; adding
+772 verbose addTmpTarball already have metadata; skipping unpack for smart-buffer@4.2.0
+773 silly cache afterAdd smart-buffer@4.2.0
+774 verbose afterAdd /root/.npm/smart-buffer/4.2.0/package/package.json not in flight; writing
+775 verbose afterAdd /root/.npm/smart-buffer/4.2.0/package/package.json written
+776 silly loadAllDepsIntoIdealTree Finishing
+777 silly idealTree:prePrune myapp@1.0.0
+777 silly idealTree:prePrune ├── @types/node@18.0.3
+777 silly idealTree:prePrune ├── @types/webidl-conversions@6.1.1
+777 silly idealTree:prePrune ├── @types/whatwg-url@8.2.2
+777 silly idealTree:prePrune ├── accepts@1.3.8
+777 silly idealTree:prePrune ├── array-flatten@1.1.1
+777 silly idealTree:prePrune ├── base64-js@1.5.1
+777 silly idealTree:prePrune ├── body-parser@1.20.0
+777 silly idealTree:prePrune ├── bson@4.6.4
+777 silly idealTree:prePrune ├── buffer@5.7.1
+777 silly idealTree:prePrune ├── bytes@3.1.2
+777 silly idealTree:prePrune ├── call-bind@1.0.2
+777 silly idealTree:prePrune ├── content-disposition@0.5.4
+777 silly idealTree:prePrune ├── content-type@1.0.4
+777 silly idealTree:prePrune ├── cookie-signature@1.0.6
+777 silly idealTree:prePrune ├── cookie@0.5.0
+777 silly idealTree:prePrune ├── debug@2.6.9
+777 silly idealTree:prePrune ├── denque@2.0.1
+777 silly idealTree:prePrune ├── depd@2.0.0
+777 silly idealTree:prePrune ├── destroy@1.2.0
+777 silly idealTree:prePrune ├── ee-first@1.1.1
+777 silly idealTree:prePrune ├── encodeurl@1.0.2
+777 silly idealTree:prePrune ├── escape-html@1.0.3
+777 silly idealTree:prePrune ├── etag@1.8.1
+777 silly idealTree:prePrune ├── express@4.18.1
+777 silly idealTree:prePrune ├── finalhandler@1.2.0
+777 silly idealTree:prePrune ├── forwarded@0.2.0
+777 silly idealTree:prePrune ├── fresh@0.5.2
+777 silly idealTree:prePrune ├── function-bind@1.1.1
+777 silly idealTree:prePrune ├── get-intrinsic@1.1.2
+777 silly idealTree:prePrune ├── has-symbols@1.0.3
+777 silly idealTree:prePrune ├── has@1.0.3
+777 silly idealTree:prePrune ├── http-errors@2.0.0
+777 silly idealTree:prePrune ├── iconv-lite@0.4.24
+777 silly idealTree:prePrune ├── ieee754@1.2.1
+777 silly idealTree:prePrune ├── inherits@2.0.4
+777 silly idealTree:prePrune ├── ip@1.1.8
+777 silly idealTree:prePrune ├── ipaddr.js@1.9.1
+777 silly idealTree:prePrune ├── kareem@2.4.1
+777 silly idealTree:prePrune ├── media-typer@0.3.0
+777 silly idealTree:prePrune ├── memory-pager@1.5.0
+777 silly idealTree:prePrune ├── merge-descriptors@1.0.1
+777 silly idealTree:prePrune ├── methods@1.1.2
+777 silly idealTree:prePrune ├── mime-db@1.52.0
+777 silly idealTree:prePrune ├── mime-types@2.1.35
+777 silly idealTree:prePrune ├── mime@1.6.0
+777 silly idealTree:prePrune ├── mongodb-connection-string-url@2.5.2
+777 silly idealTree:prePrune ├── mongodb@4.7.0
+777 silly idealTree:prePrune ├─┬ mongoose@6.4.3
+777 silly idealTree:prePrune │ └── ms@2.1.3
+777 silly idealTree:prePrune ├── mpath@0.9.0
+777 silly idealTree:prePrune ├─┬ mquery@4.0.3
+777 silly idealTree:prePrune │ ├── debug@4.3.4
+777 silly idealTree:prePrune │ └── ms@2.1.2
+777 silly idealTree:prePrune ├── ms@2.0.0
+777 silly idealTree:prePrune ├── negotiator@0.6.3
+777 silly idealTree:prePrune ├── object-inspect@1.12.2
+777 silly idealTree:prePrune ├── on-finished@2.4.1
+777 silly idealTree:prePrune ├── parseurl@1.3.3
+777 silly idealTree:prePrune ├── path-to-regexp@0.1.7
+777 silly idealTree:prePrune ├── proxy-addr@2.0.7
+777 silly idealTree:prePrune ├── punycode@2.1.1
+777 silly idealTree:prePrune ├── qs@6.10.3
+777 silly idealTree:prePrune ├── range-parser@1.2.1
+777 silly idealTree:prePrune ├── raw-body@2.5.1
+777 silly idealTree:prePrune ├── safe-buffer@5.2.1
+777 silly idealTree:prePrune ├── safer-buffer@2.1.2
+777 silly idealTree:prePrune ├── saslprep@1.0.3
+777 silly idealTree:prePrune ├─┬ send@0.18.0
+777 silly idealTree:prePrune │ └── ms@2.1.3
+777 silly idealTree:prePrune ├── serve-static@1.15.0
+777 silly idealTree:prePrune ├── setprototypeof@1.2.0
+777 silly idealTree:prePrune ├── side-channel@1.0.4
+777 silly idealTree:prePrune ├── sift@16.0.0
+777 silly idealTree:prePrune ├── smart-buffer@4.2.0
+777 silly idealTree:prePrune ├── socks@2.6.2
+777 silly idealTree:prePrune ├── sparse-bitfield@3.0.3
+777 silly idealTree:prePrune ├── statuses@2.0.1
+777 silly idealTree:prePrune ├── toidentifier@1.0.1
+777 silly idealTree:prePrune ├── tr46@3.0.0
+777 silly idealTree:prePrune ├── type-is@1.6.18
+777 silly idealTree:prePrune ├── unpipe@1.0.0
+777 silly idealTree:prePrune ├── utils-merge@1.0.1
+777 silly idealTree:prePrune ├── vary@1.1.2
+777 silly idealTree:prePrune ├── webidl-conversions@7.0.0
+777 silly idealTree:prePrune └── whatwg-url@11.0.0
+778 silly loadIdealTree Finishing
+779 silly currentTree myapp@1.0.0
+779 silly currentTree ├── @types/node@18.0.3
+779 silly currentTree ├── @types/webidl-conversions@6.1.1
+779 silly currentTree ├── @types/whatwg-url@8.2.2
+779 silly currentTree ├── accepts@1.3.8
+779 silly currentTree ├── array-flatten@1.1.1
+779 silly currentTree ├── base64-js@1.5.1
+779 silly currentTree ├── body-parser@1.20.0
+779 silly currentTree ├── bson@4.6.4
+779 silly currentTree ├── buffer@5.7.1
+779 silly currentTree ├── bytes@3.1.2
+779 silly currentTree ├── call-bind@1.0.2
+779 silly currentTree ├── content-disposition@0.5.4
+779 silly currentTree ├── content-type@1.0.4
+779 silly currentTree ├── cookie-signature@1.0.6
+779 silly currentTree ├── cookie@0.5.0
+779 silly currentTree ├── debug@2.6.9
+779 silly currentTree ├── denque@2.0.1
+779 silly currentTree ├── depd@2.0.0
+779 silly currentTree ├── destroy@1.2.0
+779 silly currentTree ├── ee-first@1.1.1
+779 silly currentTree ├── encodeurl@1.0.2
+779 silly currentTree ├── escape-html@1.0.3
+779 silly currentTree ├── etag@1.8.1
+779 silly currentTree ├── express@4.18.1
+779 silly currentTree ├── finalhandler@1.2.0
+779 silly currentTree ├── forwarded@0.2.0
+779 silly currentTree ├── fresh@0.5.2
+779 silly currentTree ├── function-bind@1.1.1
+779 silly currentTree ├── get-intrinsic@1.1.2
+779 silly currentTree ├── has-symbols@1.0.3
+779 silly currentTree ├── has@1.0.3
+779 silly currentTree ├── http-errors@2.0.0
+779 silly currentTree ├── iconv-lite@0.4.24
+779 silly currentTree ├── ieee754@1.2.1
+779 silly currentTree ├── inherits@2.0.4
+779 silly currentTree ├── ip@1.1.8
+779 silly currentTree ├── ipaddr.js@1.9.1
+779 silly currentTree ├── kareem@2.4.1
+779 silly currentTree ├── media-typer@0.3.0
+779 silly currentTree ├── memory-pager@1.5.0
+779 silly currentTree ├── merge-descriptors@1.0.1
+779 silly currentTree ├── methods@1.1.2
+779 silly currentTree ├── mime-db@1.52.0
+779 silly currentTree ├── mime-types@2.1.35
+779 silly currentTree ├── mime@1.6.0
+779 silly currentTree ├── mongodb-connection-string-url@2.5.2
+779 silly currentTree ├── mongodb@4.7.0
+779 silly currentTree ├─┬ mongoose@6.4.3
+779 silly currentTree │ └── ms@2.1.3
+779 silly currentTree ├── mpath@0.9.0
+779 silly currentTree ├─┬ mquery@4.0.3
+779 silly currentTree │ ├── debug@4.3.4
+779 silly currentTree │ └── ms@2.1.2
+779 silly currentTree ├── ms@2.0.0
+779 silly currentTree ├── negotiator@0.6.3
+779 silly currentTree ├── object-inspect@1.12.2
+779 silly currentTree ├── on-finished@2.4.1
+779 silly currentTree ├── parseurl@1.3.3
+779 silly currentTree ├── path-to-regexp@0.1.7
+779 silly currentTree ├── proxy-addr@2.0.7
+779 silly currentTree ├── punycode@2.1.1
+779 silly currentTree ├── qs@6.10.3
+779 silly currentTree ├── range-parser@1.2.1
+779 silly currentTree ├── raw-body@2.5.1
+779 silly currentTree ├── safe-buffer@5.2.1
+779 silly currentTree ├── safer-buffer@2.1.2
+779 silly currentTree ├── saslprep@1.0.3
+779 silly currentTree ├─┬ send@0.18.0
+779 silly currentTree │ └── ms@2.1.3
+779 silly currentTree ├── serve-static@1.15.0
+779 silly currentTree ├── setprototypeof@1.2.0
+779 silly currentTree ├── side-channel@1.0.4
+779 silly currentTree ├── sift@16.0.0
+779 silly currentTree ├── smart-buffer@4.2.0
+779 silly currentTree ├── socks@2.6.2
+779 silly currentTree ├── sparse-bitfield@3.0.3
+779 silly currentTree ├── statuses@2.0.1
+779 silly currentTree ├── toidentifier@1.0.1
+779 silly currentTree ├── tr46@3.0.0
+779 silly currentTree ├── type-is@1.6.18
+779 silly currentTree ├── unpipe@1.0.0
+779 silly currentTree ├── utils-merge@1.0.1
+779 silly currentTree ├── vary@1.1.2
+779 silly currentTree ├── webidl-conversions@7.0.0
+779 silly currentTree └── whatwg-url@11.0.0
+780 silly idealTree myapp@1.0.0
+780 silly idealTree ├── @types/node@18.0.3
+780 silly idealTree ├── @types/webidl-conversions@6.1.1
+780 silly idealTree ├── @types/whatwg-url@8.2.2
+780 silly idealTree ├── accepts@1.3.8
+780 silly idealTree ├── array-flatten@1.1.1
+780 silly idealTree ├── base64-js@1.5.1
+780 silly idealTree ├── body-parser@1.20.0
+780 silly idealTree ├── bson@4.6.4
+780 silly idealTree ├── buffer@5.7.1
+780 silly idealTree ├── bytes@3.1.2
+780 silly idealTree ├── call-bind@1.0.2
+780 silly idealTree ├── content-disposition@0.5.4
+780 silly idealTree ├── content-type@1.0.4
+780 silly idealTree ├── cookie-signature@1.0.6
+780 silly idealTree ├── cookie@0.5.0
+780 silly idealTree ├── debug@2.6.9
+780 silly idealTree ├── denque@2.0.1
+780 silly idealTree ├── depd@2.0.0
+780 silly idealTree ├── destroy@1.2.0
+780 silly idealTree ├── ee-first@1.1.1
+780 silly idealTree ├── encodeurl@1.0.2
+780 silly idealTree ├── escape-html@1.0.3
+780 silly idealTree ├── etag@1.8.1
+780 silly idealTree ├── express@4.18.1
+780 silly idealTree ├── finalhandler@1.2.0
+780 silly idealTree ├── forwarded@0.2.0
+780 silly idealTree ├── fresh@0.5.2
+780 silly idealTree ├── function-bind@1.1.1
+780 silly idealTree ├── get-intrinsic@1.1.2
+780 silly idealTree ├── has-symbols@1.0.3
+780 silly idealTree ├── has@1.0.3
+780 silly idealTree ├── http-errors@2.0.0
+780 silly idealTree ├── iconv-lite@0.4.24
+780 silly idealTree ├── ieee754@1.2.1
+780 silly idealTree ├── inherits@2.0.4
+780 silly idealTree ├── ip@1.1.8
+780 silly idealTree ├── ipaddr.js@1.9.1
+780 silly idealTree ├── kareem@2.4.1
+780 silly idealTree ├── media-typer@0.3.0
+780 silly idealTree ├── memory-pager@1.5.0
+780 silly idealTree ├── merge-descriptors@1.0.1
+780 silly idealTree ├── methods@1.1.2
+780 silly idealTree ├── mime-db@1.52.0
+780 silly idealTree ├── mime-types@2.1.35
+780 silly idealTree ├── mime@1.6.0
+780 silly idealTree ├── mongodb-connection-string-url@2.5.2
+780 silly idealTree ├── mongodb@4.7.0
+780 silly idealTree ├─┬ mongoose@6.4.3
+780 silly idealTree │ └── ms@2.1.3
+780 silly idealTree ├── mpath@0.9.0
+780 silly idealTree ├─┬ mquery@4.0.3
+780 silly idealTree │ ├── debug@4.3.4
+780 silly idealTree │ └── ms@2.1.2
+780 silly idealTree ├── ms@2.0.0
+780 silly idealTree ├── negotiator@0.6.3
+780 silly idealTree ├── object-inspect@1.12.2
+780 silly idealTree ├── on-finished@2.4.1
+780 silly idealTree ├── parseurl@1.3.3
+780 silly idealTree ├── path-to-regexp@0.1.7
+780 silly idealTree ├── proxy-addr@2.0.7
+780 silly idealTree ├── punycode@2.1.1
+780 silly idealTree ├── qs@6.10.3
+780 silly idealTree ├── range-parser@1.2.1
+780 silly idealTree ├── raw-body@2.5.1
+780 silly idealTree ├── safe-buffer@5.2.1
+780 silly idealTree ├── safer-buffer@2.1.2
+780 silly idealTree ├── saslprep@1.0.3
+780 silly idealTree ├─┬ send@0.18.0
+780 silly idealTree │ └── ms@2.1.3
+780 silly idealTree ├── serve-static@1.15.0
+780 silly idealTree ├── setprototypeof@1.2.0
+780 silly idealTree ├── side-channel@1.0.4
+780 silly idealTree ├── sift@16.0.0
+780 silly idealTree ├── smart-buffer@4.2.0
+780 silly idealTree ├── socks@2.6.2
+780 silly idealTree ├── sparse-bitfield@3.0.3
+780 silly idealTree ├── statuses@2.0.1
+780 silly idealTree ├── toidentifier@1.0.1
+780 silly idealTree ├── tr46@3.0.0
+780 silly idealTree ├── type-is@1.6.18
+780 silly idealTree ├── unpipe@1.0.0
+780 silly idealTree ├── utils-merge@1.0.1
+780 silly idealTree ├── vary@1.1.2
+780 silly idealTree ├── webidl-conversions@7.0.0
+780 silly idealTree └── whatwg-url@11.0.0
+781 silly generateActionsToTake Starting
+782 silly install generateActionsToTake
+783 silly generateActionsToTake Finishing
+784 silly diffTrees action count 16
+785 silly diffTrees update @types/node@18.0.3
+786 silly diffTrees update @types/webidl-conversions@6.1.1
+787 silly diffTrees update @types/whatwg-url@8.2.2
+788 silly diffTrees update denque@2.0.1
+789 silly diffTrees update ip@1.1.8
+790 silly diffTrees update memory-pager@1.5.0
+791 silly diffTrees update punycode@2.1.1
+792 silly diffTrees update smart-buffer@4.2.0
+793 silly diffTrees update socks@2.6.2
+794 silly diffTrees update sparse-bitfield@3.0.3
+795 silly diffTrees update saslprep@1.0.3
+796 silly diffTrees update tr46@3.0.0
+797 silly diffTrees update webidl-conversions@7.0.0
+798 silly diffTrees update whatwg-url@11.0.0
+799 silly diffTrees update mongodb-connection-string-url@2.5.2
+800 silly diffTrees update mongodb@4.7.0
+801 silly decomposeActions action count 128
+802 silly decomposeActions fetch @types/node@18.0.3
+803 silly decomposeActions extract @types/node@18.0.3
+804 silly decomposeActions test @types/node@18.0.3
+805 silly decomposeActions preinstall @types/node@18.0.3
+806 silly decomposeActions build @types/node@18.0.3
+807 silly decomposeActions install @types/node@18.0.3
+808 silly decomposeActions postinstall @types/node@18.0.3
+809 silly decomposeActions finalize @types/node@18.0.3
+810 silly decomposeActions fetch @types/webidl-conversions@6.1.1
+811 silly decomposeActions extract @types/webidl-conversions@6.1.1
+812 silly decomposeActions test @types/webidl-conversions@6.1.1
+813 silly decomposeActions preinstall @types/webidl-conversions@6.1.1
+814 silly decomposeActions build @types/webidl-conversions@6.1.1
+815 silly decomposeActions install @types/webidl-conversions@6.1.1
+816 silly decomposeActions postinstall @types/webidl-conversions@6.1.1
+817 silly decomposeActions finalize @types/webidl-conversions@6.1.1
+818 silly decomposeActions fetch @types/whatwg-url@8.2.2
+819 silly decomposeActions extract @types/whatwg-url@8.2.2
+820 silly decomposeActions test @types/whatwg-url@8.2.2
+821 silly decomposeActions preinstall @types/whatwg-url@8.2.2
+822 silly decomposeActions build @types/whatwg-url@8.2.2
+823 silly decomposeActions install @types/whatwg-url@8.2.2
+824 silly decomposeActions postinstall @types/whatwg-url@8.2.2
+825 silly decomposeActions finalize @types/whatwg-url@8.2.2
+826 silly decomposeActions fetch denque@2.0.1
+827 silly decomposeActions extract denque@2.0.1
+828 silly decomposeActions test denque@2.0.1
+829 silly decomposeActions preinstall denque@2.0.1
+830 silly decomposeActions build denque@2.0.1
+831 silly decomposeActions install denque@2.0.1
+832 silly decomposeActions postinstall denque@2.0.1
+833 silly decomposeActions finalize denque@2.0.1
+834 silly decomposeActions fetch ip@1.1.8
+835 silly decomposeActions extract ip@1.1.8
+836 silly decomposeActions test ip@1.1.8
+837 silly decomposeActions preinstall ip@1.1.8
+838 silly decomposeActions build ip@1.1.8
+839 silly decomposeActions install ip@1.1.8
+840 silly decomposeActions postinstall ip@1.1.8
+841 silly decomposeActions finalize ip@1.1.8
+842 silly decomposeActions fetch memory-pager@1.5.0
+843 silly decomposeActions extract memory-pager@1.5.0
+844 silly decomposeActions test memory-pager@1.5.0
+845 silly decomposeActions preinstall memory-pager@1.5.0
+846 silly decomposeActions build memory-pager@1.5.0
+847 silly decomposeActions install memory-pager@1.5.0
+848 silly decomposeActions postinstall memory-pager@1.5.0
+849 silly decomposeActions finalize memory-pager@1.5.0
+850 silly decomposeActions fetch punycode@2.1.1
+851 silly decomposeActions extract punycode@2.1.1
+852 silly decomposeActions test punycode@2.1.1
+853 silly decomposeActions preinstall punycode@2.1.1
+854 silly decomposeActions build punycode@2.1.1
+855 silly decomposeActions install punycode@2.1.1
+856 silly decomposeActions postinstall punycode@2.1.1
+857 silly decomposeActions finalize punycode@2.1.1
+858 silly decomposeActions fetch smart-buffer@4.2.0
+859 silly decomposeActions extract smart-buffer@4.2.0
+860 silly decomposeActions test smart-buffer@4.2.0
+861 silly decomposeActions preinstall smart-buffer@4.2.0
+862 silly decomposeActions build smart-buffer@4.2.0
+863 silly decomposeActions install smart-buffer@4.2.0
+864 silly decomposeActions postinstall smart-buffer@4.2.0
+865 silly decomposeActions finalize smart-buffer@4.2.0
+866 silly decomposeActions fetch socks@2.6.2
+867 silly decomposeActions extract socks@2.6.2
+868 silly decomposeActions test socks@2.6.2
+869 silly decomposeActions preinstall socks@2.6.2
+870 silly decomposeActions build socks@2.6.2
+871 silly decomposeActions install socks@2.6.2
+872 silly decomposeActions postinstall socks@2.6.2
+873 silly decomposeActions finalize socks@2.6.2
+874 silly decomposeActions fetch sparse-bitfield@3.0.3
+875 silly decomposeActions extract sparse-bitfield@3.0.3
+876 silly decomposeActions test sparse-bitfield@3.0.3
+877 silly decomposeActions preinstall sparse-bitfield@3.0.3
+878 silly decomposeActions build sparse-bitfield@3.0.3
+879 silly decomposeActions install sparse-bitfield@3.0.3
+880 silly decomposeActions postinstall sparse-bitfield@3.0.3
+881 silly decomposeActions finalize sparse-bitfield@3.0.3
+882 silly decomposeActions fetch saslprep@1.0.3
+883 silly decomposeActions extract saslprep@1.0.3
+884 silly decomposeActions test saslprep@1.0.3
+885 silly decomposeActions preinstall saslprep@1.0.3
+886 silly decomposeActions build saslprep@1.0.3
+887 silly decomposeActions install saslprep@1.0.3
+888 silly decomposeActions postinstall saslprep@1.0.3
+889 silly decomposeActions finalize saslprep@1.0.3
+890 silly decomposeActions fetch tr46@3.0.0
+891 silly decomposeActions extract tr46@3.0.0
+892 silly decomposeActions test tr46@3.0.0
+893 silly decomposeActions preinstall tr46@3.0.0
+894 silly decomposeActions build tr46@3.0.0
+895 silly decomposeActions install tr46@3.0.0
+896 silly decomposeActions postinstall tr46@3.0.0
+897 silly decomposeActions finalize tr46@3.0.0
+898 silly decomposeActions fetch webidl-conversions@7.0.0
+899 silly decomposeActions extract webidl-conversions@7.0.0
+900 silly decomposeActions test webidl-conversions@7.0.0
+901 silly decomposeActions preinstall webidl-conversions@7.0.0
+902 silly decomposeActions build webidl-conversions@7.0.0
+903 silly decomposeActions install webidl-conversions@7.0.0
+904 silly decomposeActions postinstall webidl-conversions@7.0.0
+905 silly decomposeActions finalize webidl-conversions@7.0.0
+906 silly decomposeActions fetch whatwg-url@11.0.0
+907 silly decomposeActions extract whatwg-url@11.0.0
+908 silly decomposeActions test whatwg-url@11.0.0
+909 silly decomposeActions preinstall whatwg-url@11.0.0
+910 silly decomposeActions build whatwg-url@11.0.0
+911 silly decomposeActions install whatwg-url@11.0.0
+912 silly decomposeActions postinstall whatwg-url@11.0.0
+913 silly decomposeActions finalize whatwg-url@11.0.0
+914 silly decomposeActions fetch mongodb-connection-string-url@2.5.2
+915 silly decomposeActions extract mongodb-connection-string-url@2.5.2
+916 silly decomposeActions test mongodb-connection-string-url@2.5.2
+917 silly decomposeActions preinstall mongodb-connection-string-url@2.5.2
+918 silly decomposeActions build mongodb-connection-string-url@2.5.2
+919 silly decomposeActions install mongodb-connection-string-url@2.5.2
+920 silly decomposeActions postinstall mongodb-connection-string-url@2.5.2
+921 silly decomposeActions finalize mongodb-connection-string-url@2.5.2
+922 silly decomposeActions fetch mongodb@4.7.0
+923 silly decomposeActions extract mongodb@4.7.0
+924 silly decomposeActions test mongodb@4.7.0
+925 silly decomposeActions preinstall mongodb@4.7.0
+926 silly decomposeActions build mongodb@4.7.0
+927 silly decomposeActions install mongodb@4.7.0
+928 silly decomposeActions postinstall mongodb@4.7.0
+929 silly decomposeActions finalize mongodb@4.7.0
+930 silly executeActions Starting
+931 silly install executeActions
+932 silly doSerial global-install 0
+933 silly doParallel fetch 16
+934 verbose makeDirectory /root/.npm/_locks creation not in flight; initializing
+935 silly makeDirectory /root/.npm/_locks uid: 0 gid: 0
+936 verbose lock using /root/.npm/_locks/staging-b261f3278342d555.lock for /root/myapploadbalancer/node_modules/.staging
+937 silly doParallel extract 16
+938 silly extract @types/node@18.0.3
+939 silly extract @types/webidl-conversions@6.1.1
+940 silly extract @types/whatwg-url@8.2.2
+941 silly extract denque@2.0.1
+942 silly extract ip@1.1.8
+943 silly extract memory-pager@1.5.0
+944 silly extract punycode@2.1.1
+945 silly extract smart-buffer@4.2.0
+946 silly extract socks@2.6.2
+947 silly extract sparse-bitfield@3.0.3
+948 silly extract saslprep@1.0.3
+949 silly extract tr46@3.0.0
+950 silly extract webidl-conversions@7.0.0
+951 silly extract whatwg-url@11.0.0
+952 silly extract mongodb-connection-string-url@2.5.2
+953 silly extract mongodb@4.7.0
+954 verbose unbuild node_modules/.staging/@types/node-2466a998
+955 verbose unbuild node_modules/.staging/@types/webidl-conversions-e407fc30
+956 verbose unbuild node_modules/.staging/@types/whatwg-url-7dac22e6
+957 verbose unbuild node_modules/.staging/denque-fc184c60
+958 verbose unbuild node_modules/.staging/ip-b07e1425
+959 verbose unbuild node_modules/.staging/memory-pager-b5d862b0
+960 verbose unbuild node_modules/.staging/punycode-e1a979c9
+961 verbose unbuild node_modules/.staging/smart-buffer-24bd3765
+962 verbose unbuild node_modules/.staging/socks-f1d05dd5
+963 verbose unbuild node_modules/.staging/sparse-bitfield-dbf60aaa
+964 verbose unbuild node_modules/.staging/saslprep-0ba5d29c
+965 verbose unbuild node_modules/.staging/tr46-957aeb10
+966 verbose unbuild node_modules/.staging/webidl-conversions-d8953980
+967 verbose unbuild node_modules/.staging/whatwg-url-e59a3294
+968 verbose unbuild node_modules/.staging/mongodb-connection-string-url-0f1eb0cc
+969 verbose unbuild node_modules/.staging/mongodb-2ab22edb
+970 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/@types/node-2466a998 is being purged from base /root/myapploadbalancer
+971 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/@types/node-2466a998
+972 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/@types/webidl-conversions-e407fc30 is being purged from base /root/myapploadbalancer
+973 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/@types/webidl-conversions-e407fc30
+974 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/@types/whatwg-url-7dac22e6 is being purged from base /root/myapploadbalancer
+975 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/@types/whatwg-url-7dac22e6
+976 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/denque-fc184c60 is being purged from base /root/myapploadbalancer
+977 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/denque-fc184c60
+978 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/ip-b07e1425 is being purged from base /root/myapploadbalancer
+979 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/ip-b07e1425
+980 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/memory-pager-b5d862b0 is being purged from base /root/myapploadbalancer
+981 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/memory-pager-b5d862b0
+982 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/punycode-e1a979c9 is being purged from base /root/myapploadbalancer
+983 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/punycode-e1a979c9
+984 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/smart-buffer-24bd3765 is being purged from base /root/myapploadbalancer
+985 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/smart-buffer-24bd3765
+986 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/socks-f1d05dd5 is being purged from base /root/myapploadbalancer
+987 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/socks-f1d05dd5
+988 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/sparse-bitfield-dbf60aaa is being purged from base /root/myapploadbalancer
+989 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/sparse-bitfield-dbf60aaa
+990 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/saslprep-0ba5d29c is being purged from base /root/myapploadbalancer
+991 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/saslprep-0ba5d29c
+992 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/tr46-957aeb10 is being purged from base /root/myapploadbalancer
+993 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/tr46-957aeb10
+994 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/webidl-conversions-d8953980 is being purged from base /root/myapploadbalancer
+995 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/webidl-conversions-d8953980
+996 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/whatwg-url-e59a3294 is being purged from base /root/myapploadbalancer
+997 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/whatwg-url-e59a3294
+998 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/mongodb-connection-string-url-0f1eb0cc is being purged from base /root/myapploadbalancer
+999 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/mongodb-connection-string-url-0f1eb0cc
+1000 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/mongodb-2ab22edb is being purged from base /root/myapploadbalancer
+1001 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/mongodb-2ab22edb
+1002 verbose tar unpack /root/.npm/@types/node/18.0.3/package.tgz
+1003 verbose tar unpacking to /root/myapploadbalancer/node_modules/.staging/@types/node-2466a998
+1004 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/@types/node-2466a998 is being purged
+1005 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/@types/node-2466a998
+1006 verbose tar unpack /root/.npm/@types/webidl-conversions/6.1.1/package.tgz
+1007 verbose tar unpacking to /root/myapploadbalancer/node_modules/.staging/@types/webidl-conversions-e407fc30
+1008 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/@types/webidl-conversions-e407fc30 is being purged
+1009 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/@types/webidl-conversions-e407fc30
+1010 verbose tar unpack /root/.npm/@types/whatwg-url/8.2.2/package.tgz
+1011 verbose tar unpacking to /root/myapploadbalancer/node_modules/.staging/@types/whatwg-url-7dac22e6
+1012 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/@types/whatwg-url-7dac22e6 is being purged
+1013 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/@types/whatwg-url-7dac22e6
+1014 verbose tar unpack /root/.npm/denque/2.0.1/package.tgz
+1015 verbose tar unpacking to /root/myapploadbalancer/node_modules/.staging/denque-fc184c60
+1016 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/denque-fc184c60 is being purged
+1017 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/denque-fc184c60
+1018 verbose tar unpack /root/.npm/ip/1.1.8/package.tgz
+1019 verbose tar unpacking to /root/myapploadbalancer/node_modules/.staging/ip-b07e1425
+1020 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/ip-b07e1425 is being purged
+1021 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/ip-b07e1425
+1022 verbose tar unpack /root/.npm/memory-pager/1.5.0/package.tgz
+1023 verbose tar unpacking to /root/myapploadbalancer/node_modules/.staging/memory-pager-b5d862b0
+1024 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/memory-pager-b5d862b0 is being purged
+1025 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/memory-pager-b5d862b0
+1026 verbose tar unpack /root/.npm/punycode/2.1.1/package.tgz
+1027 verbose tar unpacking to /root/myapploadbalancer/node_modules/.staging/punycode-e1a979c9
+1028 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/punycode-e1a979c9 is being purged
+1029 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/punycode-e1a979c9
+1030 verbose tar unpack /root/.npm/smart-buffer/4.2.0/package.tgz
+1031 verbose tar unpacking to /root/myapploadbalancer/node_modules/.staging/smart-buffer-24bd3765
+1032 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/smart-buffer-24bd3765 is being purged
+1033 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/smart-buffer-24bd3765
+1034 verbose tar unpack /root/.npm/socks/2.6.2/package.tgz
+1035 verbose tar unpacking to /root/myapploadbalancer/node_modules/.staging/socks-f1d05dd5
+1036 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/socks-f1d05dd5 is being purged
+1037 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/socks-f1d05dd5
+1038 verbose tar unpack /root/.npm/sparse-bitfield/3.0.3/package.tgz
+1039 verbose tar unpacking to /root/myapploadbalancer/node_modules/.staging/sparse-bitfield-dbf60aaa
+1040 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/sparse-bitfield-dbf60aaa is being purged
+1041 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/sparse-bitfield-dbf60aaa
+1042 verbose tar unpack /root/.npm/saslprep/1.0.3/package.tgz
+1043 verbose tar unpacking to /root/myapploadbalancer/node_modules/.staging/saslprep-0ba5d29c
+1044 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/saslprep-0ba5d29c is being purged
+1045 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/saslprep-0ba5d29c
+1046 verbose tar unpack /root/.npm/tr46/3.0.0/package.tgz
+1047 verbose tar unpacking to /root/myapploadbalancer/node_modules/.staging/tr46-957aeb10
+1048 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/tr46-957aeb10 is being purged
+1049 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/tr46-957aeb10
+1050 verbose tar unpack /root/.npm/webidl-conversions/7.0.0/package.tgz
+1051 verbose tar unpacking to /root/myapploadbalancer/node_modules/.staging/webidl-conversions-d8953980
+1052 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/webidl-conversions-d8953980 is being purged
+1053 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/webidl-conversions-d8953980
+1054 verbose tar unpack /root/.npm/whatwg-url/11.0.0/package.tgz
+1055 verbose tar unpacking to /root/myapploadbalancer/node_modules/.staging/whatwg-url-e59a3294
+1056 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/whatwg-url-e59a3294 is being purged
+1057 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/whatwg-url-e59a3294
+1058 verbose tar unpack /root/.npm/mongodb-connection-string-url/2.5.2/package.tgz
+1059 verbose tar unpacking to /root/myapploadbalancer/node_modules/.staging/mongodb-connection-string-url-0f1eb0cc
+1060 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/mongodb-connection-string-url-0f1eb0cc is being purged
+1061 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/mongodb-connection-string-url-0f1eb0cc
+1062 verbose tar unpack /root/.npm/mongodb/4.7.0/package.tgz
+1063 verbose tar unpacking to /root/myapploadbalancer/node_modules/.staging/mongodb-2ab22edb
+1064 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/mongodb-2ab22edb is being purged
+1065 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/mongodb-2ab22edb
+1066 silly gunzTarPerm modes [ '755', '644' ]
+1067 silly gunzTarPerm modes [ '755', '644' ]
+1068 silly gunzTarPerm modes [ '755', '644' ]
+1069 silly gunzTarPerm modes [ '755', '644' ]
+1070 silly gunzTarPerm modes [ '755', '644' ]
+1071 silly gunzTarPerm modes [ '755', '644' ]
+1072 silly gunzTarPerm modes [ '755', '644' ]
+1073 silly gunzTarPerm modes [ '755', '644' ]
+1074 silly gunzTarPerm modes [ '755', '644' ]
+1075 silly gunzTarPerm modes [ '755', '644' ]
+1076 silly gunzTarPerm modes [ '755', '644' ]
+1077 silly gunzTarPerm modes [ '755', '644' ]
+1078 silly gunzTarPerm modes [ '755', '644' ]
+1079 silly gunzTarPerm modes [ '755', '644' ]
+1080 silly gunzTarPerm modes [ '755', '644' ]
+1081 silly gunzTarPerm modes [ '755', '644' ]
+1082 silly gunzTarPerm extractEntry
+1083 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1084 silly gunzTarPerm extractEntry LICENSE
+1085 silly gunzTarPerm modified mode [ 'LICENSE', 511, 493 ]
+1086 silly gunzTarPerm extractEntry
+1087 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1088 silly gunzTarPerm extractEntry LICENSE
+1089 silly gunzTarPerm extractEntry lib/ip.js
+1090 silly gunzTarPerm extractEntry package.json
+1091 silly gunzTarPerm extractEntry package.json
+1092 silly gunzTarPerm extractEntry LICENSE
+1093 silly gunzTarPerm extractEntry LICENSE
+1094 silly gunzTarPerm extractEntry package.json
+1095 silly gunzTarPerm extractEntry package.json
+1096 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+1097 silly gunzTarPerm extractEntry index.js
+1098 silly gunzTarPerm extractEntry lib/index.js
+1099 silly gunzTarPerm extractEntry lib/encoding.js
+1100 silly gunzTarPerm extractEntry LICENSE
+1101 silly gunzTarPerm extractEntry lib/cursor/abstract_cursor.js
+1102 silly gunzTarPerm extractEntry package.json
+1103 silly gunzTarPerm extractEntry README.md
+1104 silly gunzTarPerm extractEntry package.json
+1105 silly gunzTarPerm extractEntry LICENSE.md
+1106 silly gunzTarPerm extractEntry lib/Function.js
+1107 silly gunzTarPerm extractEntry index.js
+1108 silly gunzTarPerm extractEntry
+1109 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1110 silly gunzTarPerm extractEntry
+1111 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1112 silly gunzTarPerm extractEntry
+1113 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1114 silly gunzTarPerm extractEntry README.md
+1115 silly gunzTarPerm modified mode [ 'README.md', 511, 493 ]
+1116 silly gunzTarPerm extractEntry index.d.ts
+1117 silly gunzTarPerm modified mode [ 'index.d.ts', 511, 493 ]
+1118 silly gunzTarPerm extractEntry index.js
+1119 silly gunzTarPerm extractEntry package.json
+1120 silly gunzTarPerm extractEntry CHANGELOG.md
+1121 silly gunzTarPerm extractEntry README.md
+1122 silly gunzTarPerm extractEntry index.d.ts
+1123 silly gunzTarPerm extractEntry .travis.yml
+1124 silly gunzTarPerm extractEntry index.js
+1125 silly gunzTarPerm extractEntry LICENSE-MIT.txt
+1126 silly gunzTarPerm extractEntry punycode.es6.js
+1127 silly gunzTarPerm extractEntry build/smartbuffer.js
+1128 silly gunzTarPerm extractEntry build/utils.js
+1129 silly gunzTarPerm extractEntry build/common/constants.js
+1130 silly gunzTarPerm extractEntry build/common/helpers.js
+1131 silly gunzTarPerm extractEntry .npmignore
+1132 silly gunzTarPerm extractEntry README.md
+1133 silly gunzTarPerm extractEntry .editorconfig
+1134 silly gunzTarPerm modified mode [ '.editorconfig', 436, 420 ]
+1135 silly gunzTarPerm extractEntry .gitattributes
+1136 silly gunzTarPerm modified mode [ '.gitattributes', 436, 420 ]
+1137 silly gunzTarPerm extractEntry lib/regexes.js
+1138 silly gunzTarPerm extractEntry lib/statusMapping.js
+1139 silly gunzTarPerm extractEntry lib/index.js
+1140 silly gunzTarPerm extractEntry lib/redact.js
+1141 silly gunzTarPerm extractEntry package.json
+1142 silly gunzTarPerm extractEntry lib/index.js.map
+1143 silly gunzTarPerm extractEntry lib/redact.js.map
+1144 silly gunzTarPerm extractEntry README.md
+1145 silly gunzTarPerm extractEntry .esm-wrapper.mjs
+1146 silly gunzTarPerm extractEntry lib/index.d.ts
+1147 silly gunzTarPerm extractEntry lib/redact.d.ts
+1148 silly gunzTarPerm extractEntry
+1149 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1150 silly gunzTarPerm extractEntry
+1151 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1152 silly gunzTarPerm extractEntry
+1153 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1154 silly gunzTarPerm extractEntry lib/operations/add_user.js
+1155 silly gunzTarPerm extractEntry
+1156 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1157 silly gunzTarPerm extractEntry
+1158 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1159 silly gunzTarPerm extractEntry
+1160 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1161 silly gunzTarPerm extractEntry
+1162 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1163 silly gunzTarPerm extractEntry package.json
+1164 silly gunzTarPerm extractEntry build/smartbuffer.js.map
+1165 silly gunzTarPerm extractEntry build/utils.js.map
+1166 silly gunzTarPerm extractEntry lib/mappingTable.json
+1167 silly gunzTarPerm extractEntry package.json
+1168 silly gunzTarPerm extractEntry package.json
+1169 silly gunzTarPerm modified mode [ 'package.json', 511, 493 ]
+1170 silly gunzTarPerm extractEntry LICENSE
+1171 silly gunzTarPerm extractEntry README.md
+1172 silly gunzTarPerm extractEntry punycode.js
+1173 silly gunzTarPerm extractEntry .travis.yml
+1174 silly gunzTarPerm modified mode [ '.travis.yml', 436, 420 ]
+1175 silly gunzTarPerm extractEntry CHANGELOG.md
+1176 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+1177 silly gunzTarPerm extractEntry LICENSE
+1178 silly gunzTarPerm extractEntry index.js
+1179 silly gunzTarPerm extractEntry lib/infra.js
+1180 silly gunzTarPerm extractEntry lib/percent-encoding.js
+1181 silly gunzTarPerm extractEntry docs/CHANGELOG.md
+1182 silly gunzTarPerm extractEntry build/index.js
+1183 silly gunzTarPerm extractEntry LICENSE.md
+1184 silly gunzTarPerm extractEntry README.md
+1185 silly gunzTarPerm extractEntry docs/README_v3.md
+1186 silly gunzTarPerm extractEntry README.md
+1187 silly gunzTarPerm extractEntry lib/admin.js
+1188 silly gunzTarPerm extractEntry lib/operations/aggregate.js
+1189 silly gunzTarPerm extractEntry
+1190 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1191 silly gunzTarPerm extractEntry
+1192 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1193 silly gunzTarPerm extractEntry
+1194 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1195 silly gunzTarPerm extractEntry
+1196 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1197 silly gunzTarPerm extractEntry test.js
+1198 silly gunzTarPerm extractEntry code-points.mem
+1199 silly gunzTarPerm modified mode [ 'code-points.mem', 436, 420 ]
+1200 silly gunzTarPerm extractEntry test.js
+1201 silly gunzTarPerm extractEntry .travis.yml
+1202 silly gunzTarPerm extractEntry README.md
+1203 silly gunzTarPerm extractEntry lib/URL-impl.js
+1204 silly gunzTarPerm extractEntry lib/url-state-machine.js
+1205 silly gunzTarPerm extractEntry lib/URL.js
+1206 silly gunzTarPerm extractEntry lib/urlencoded.js
+1207 silly gunzTarPerm extractEntry lib/URLSearchParams-impl.js
+1208 silly gunzTarPerm extractEntry lib/URLSearchParams.js
+1209 silly gunzTarPerm extractEntry lib/utils.js
+1210 silly gunzTarPerm extractEntry lib/VoidFunction.js
+1211 silly gunzTarPerm extractEntry webidl2js-wrapper.js
+1212 silly gunzTarPerm extractEntry package.json
+1213 silly gunzTarPerm extractEntry README.md
+1214 silly gunzTarPerm extractEntry LICENSE.txt
+1215 silly gunzTarPerm extractEntry generate-code-points.js
+1216 silly gunzTarPerm modified mode [ 'generate-code-points.js', 436, 420 ]
+1217 silly gunzTarPerm extractEntry README.md
+1218 silly gunzTarPerm extractEntry docs/ROADMAP.md
+1219 silly gunzTarPerm extractEntry build/common/receivebuffer.js
+1220 silly gunzTarPerm extractEntry build/client/socksclient.js
+1221 silly gunzTarPerm extractEntry index.js
+1222 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+1223 silly gunzTarPerm extractEntry LICENSE
+1224 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+1225 silly gunzTarPerm extractEntry
+1226 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1227 silly gunzTarPerm extractEntry
+1228 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1229 silly gunzTarPerm extractEntry lib/cursor/aggregation_cursor.js
+1230 silly gunzTarPerm extractEntry lib/cmap/auth/auth_provider.js
+1231 silly gunzTarPerm extractEntry
+1232 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1233 silly gunzTarPerm extractEntry
+1234 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1235 silly gunzTarPerm extractEntry
+1236 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1237 silly gunzTarPerm extractEntry typings/smartbuffer.d.ts
+1238 silly gunzTarPerm extractEntry typings/utils.d.ts
+1239 silly gunzTarPerm extractEntry build/common/util.js
+1240 silly gunzTarPerm extractEntry package.json
+1241 silly gunzTarPerm extractEntry readme.md
+1242 silly gunzTarPerm modified mode [ 'readme.md', 436, 420 ]
+1243 silly gunzTarPerm extractEntry lib/code-points.js
+1244 silly gunzTarPerm modified mode [ 'lib/code-points.js', 436, 420 ]
+1245 silly gunzTarPerm extractEntry
+1246 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1247 silly gunzTarPerm extractEntry
+1248 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1249 silly gunzTarPerm extractEntry
+1250 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1251 silly gunzTarPerm extractEntry lib/bson.js
+1252 silly gunzTarPerm extractEntry lib/operations/bulk_write.js
+1253 silly gunzTarPerm extractEntry
+1254 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1255 silly gunzTarPerm extractEntry
+1256 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1257 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/ip-b07e1425/node_modules is being purged
+1258 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/ip-b07e1425/node_modules
+1259 silly gunzTarPerm extractEntry .prettierrc.yaml
+1260 silly gunzTarPerm extractEntry .travis.yml
+1261 silly gunzTarPerm extractEntry build/common/constants.js.map
+1262 silly gunzTarPerm extractEntry build/common/helpers.js.map
+1263 silly gunzTarPerm extractEntry lib/memory-code-points.js
+1264 silly gunzTarPerm modified mode [ 'lib/memory-code-points.js', 436, 420 ]
+1265 silly gunzTarPerm extractEntry lib/util.js
+1266 silly gunzTarPerm modified mode [ 'lib/util.js', 436, 420 ]
+1267 silly gunzTarPerm extractEntry test/index.js
+1268 silly gunzTarPerm modified mode [ 'test/index.js', 436, 420 ]
+1269 silly gunzTarPerm extractEntry lib/change_stream.js
+1270 silly gunzTarPerm extractEntry lib/collection.js
+1271 silly gunzTarPerm extractEntry test/util.js
+1272 silly gunzTarPerm modified mode [ 'test/util.js', 436, 420 ]
+1273 silly gunzTarPerm extractEntry
+1274 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1275 silly gunzTarPerm extractEntry
+1276 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1277 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/@types/webidl-conversions-e407fc30/node_modules is being purged
+1278 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/@types/webidl-conversions-e407fc30/node_modules
+1279 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/webidl-conversions-d8953980/node_modules is being purged
+1280 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/webidl-conversions-d8953980/node_modules
+1281 silly gunzTarPerm extractEntry
+1282 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1283 silly gunzTarPerm extractEntry build/index.js.map
+1284 silly gunzTarPerm extractEntry build/common/receivebuffer.js.map
+1285 silly gunzTarPerm extractEntry build/client/socksclient.js.map
+1286 silly gunzTarPerm extractEntry build/common/util.js.map
+1287 silly gunzTarPerm extractEntry docs/examples/javascript/associateExample.md
+1288 silly gunzTarPerm extractEntry lib/operations/collections.js
+1289 silly gunzTarPerm extractEntry lib/cmap/command_monitoring_events.js
+1290 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/punycode-e1a979c9/node_modules is being purged
+1291 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/punycode-e1a979c9/node_modules
+1292 silly gunzTarPerm extractEntry
+1293 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1294 silly gunzTarPerm extractEntry
+1295 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1296 silly gunzTarPerm extractEntry
+1297 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1298 silly gunzTarPerm extractEntry
+1299 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1300 silly gunzTarPerm extractEntry
+1301 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1302 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/memory-pager-b5d862b0/node_modules is being purged
+1303 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/memory-pager-b5d862b0/node_modules
+1304 silly gunzTarPerm extractEntry docs/examples/typescript/associateExample.md
+1305 silly gunzTarPerm extractEntry docs/examples/javascript/bindExample.md
+1306 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/denque-fc184c60/node_modules is being purged
+1307 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/denque-fc184c60/node_modules
+1308 silly gunzTarPerm extractEntry
+1309 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1310 silly gunzTarPerm extractEntry lib/operations/command.js
+1311 silly gunzTarPerm extractEntry lib/cmap/commands.js
+1312 silly gunzTarPerm extractEntry
+1313 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1314 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/sparse-bitfield-dbf60aaa/node_modules is being purged
+1315 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/sparse-bitfield-dbf60aaa/node_modules
+1316 silly gunzTarPerm extractEntry docs/examples/typescript/bindExample.md
+1317 silly gunzTarPerm extractEntry docs/examples/javascript/connectExample.md
+1318 silly gunzTarPerm extractEntry lib/operations/common_functions.js
+1319 silly gunzTarPerm extractEntry
+1320 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1321 silly gunzTarPerm extractEntry
+1322 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1323 silly gunzTarPerm extractEntry
+1324 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1325 silly gunzTarPerm extractEntry
+1326 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1327 silly gunzTarPerm extractEntry docs/examples/typescript/connectExample.md
+1328 silly gunzTarPerm extractEntry docs/examples/index.md
+1329 silly gunzTarPerm extractEntry
+1330 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1331 silly gunzTarPerm extractEntry lib/bulk/common.js
+1332 silly gunzTarPerm extractEntry lib/sdam/common.js
+1333 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/compression.js
+1334 silly gunzTarPerm extractEntry lib/cmap/connect.js
+1335 silly gunzTarPerm extractEntry
+1336 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1337 silly gunzTarPerm extractEntry
+1338 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1339 silly gunzTarPerm extractEntry
+1340 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1341 silly gunzTarPerm extractEntry docs/index.md
+1342 silly gunzTarPerm extractEntry docs/migratingFromV1.md
+1343 silly gunzTarPerm extractEntry
+1344 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1345 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/tr46-957aeb10/node_modules is being purged
+1346 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/tr46-957aeb10/node_modules
+1347 silly gunzTarPerm extractEntry lib/operations/connect.js
+1348 silly gunzTarPerm extractEntry lib/cmap/connection_pool_events.js
+1349 silly gunzTarPerm extractEntry lib/cmap/connection_pool.js
+1350 silly gunzTarPerm extractEntry lib/connection_string.js
+1351 silly gunzTarPerm extractEntry README.md
+1352 silly gunzTarPerm extractEntry typings/common/constants.d.ts
+1353 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/mongodb-connection-string-url-0f1eb0cc/node_modules is being purged
+1354 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/mongodb-connection-string-url-0f1eb0cc/node_modules
+1355 silly gunzTarPerm extractEntry
+1356 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1357 silly gunzTarPerm extractEntry
+1358 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1359 silly gunzTarPerm extractEntry
+1360 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1361 silly gunzTarPerm extractEntry lib/cmap/connection.js
+1362 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/constants.js
+1363 silly gunzTarPerm extractEntry typings/common/helpers.d.ts
+1364 silly gunzTarPerm extractEntry typings/index.d.ts
+1365 silly gunzTarPerm extractEntry
+1366 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1367 silly gunzTarPerm extractEntry
+1368 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1369 silly gunzTarPerm extractEntry lib/constants.js
+1370 silly gunzTarPerm extractEntry lib/operations/count_documents.js
+1371 silly gunzTarPerm extractEntry typings/common/receivebuffer.d.ts
+1372 silly gunzTarPerm extractEntry typings/client/socksclient.d.ts
+1373 silly gunzTarPerm extractEntry typings/common/util.d.ts
+1374 silly gunzTarPerm extractEntry
+1375 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1376 silly gunzTarPerm extractEntry
+1377 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1378 silly gunzTarPerm extractEntry
+1379 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1380 silly gunzTarPerm extractEntry .prettierrc.yaml
+1381 silly gunzTarPerm extractEntry
+1382 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1383 silly gunzTarPerm extractEntry
+1384 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1385 silly gunzTarPerm extractEntry
+1386 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1387 silly gunzTarPerm extractEntry lib/operations/count.js
+1388 silly gunzTarPerm extractEntry lib/operations/create_collection.js
+1389 silly gunzTarPerm extractEntry .travis.yml
+1390 silly gunzTarPerm extractEntry
+1391 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1392 silly gunzTarPerm extractEntry
+1393 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1394 silly gunzTarPerm extractEntry
+1395 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1396 silly gunzTarPerm extractEntry lib/db.js
+1397 silly gunzTarPerm extractEntry lib/operations/delete.js
+1398 silly gunzTarPerm extractEntry lib/deps.js
+1399 silly gunzTarPerm extractEntry lib/operations/distinct.js
+1400 silly gunzTarPerm extractEntry
+1401 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1402 silly gunzTarPerm extractEntry
+1403 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1404 silly gunzTarPerm extractEntry
+1405 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1406 silly gunzTarPerm extractEntry
+1407 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1408 silly gunzTarPerm extractEntry lib/gridfs/download.js
+1409 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/smart-buffer-24bd3765/node_modules is being purged
+1410 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/smart-buffer-24bd3765/node_modules
+1411 silly gunzTarPerm extractEntry
+1412 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1413 silly gunzTarPerm extractEntry lib/operations/drop.js
+1414 silly gunzTarPerm extractEntry lib/encrypter.js
+1415 silly gunzTarPerm extractEntry lib/error.js
+1416 silly gunzTarPerm extractEntry
+1417 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1418 silly gunzTarPerm extractEntry lib/cmap/errors.js
+1419 silly gunzTarPerm extractEntry lib/operations/estimated_document_count.js
+1420 silly gunzTarPerm extractEntry
+1421 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1422 silly gunzTarPerm extractEntry
+1423 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1424 silly gunzTarPerm extractEntry
+1425 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1426 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/whatwg-url-e59a3294/node_modules is being purged
+1427 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/whatwg-url-e59a3294/node_modules
+1428 silly gunzTarPerm extractEntry lib/operations/eval.js
+1429 silly gunzTarPerm extractEntry lib/sdam/events.js
+1430 silly gunzTarPerm extractEntry
+1431 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1432 silly gunzTarPerm extractEntry
+1433 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1434 silly gunzTarPerm extractEntry
+1435 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1436 silly gunzTarPerm extractEntry
+1437 silly gunzTarPerm modified mode [ '', 511, 493 ]
+1438 silly gunzTarPerm extractEntry lib/operations/execute_operation.js
+1439 silly gunzTarPerm extractEntry lib/explain.js
+1440 silly gunzTarPerm extractEntry lib/operations/find_and_modify.js
+1441 silly gunzTarPerm extractEntry lib/cursor/find_cursor.js
+1442 silly gunzTarPerm extractEntry lib/operations/find.js
+1443 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/saslprep-0ba5d29c/node_modules is being purged
+1444 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/saslprep-0ba5d29c/node_modules
+1445 silly gunzTarPerm extractEntry lib/operations/get_more.js
+1446 silly gunzTarPerm extractEntry lib/cmap/auth/gssapi.js
+1447 silly gunzTarPerm extractEntry lib/gridfs/index.js
+1448 silly gunzTarPerm extractEntry lib/index.js
+1449 silly gunzTarPerm extractEntry lib/operations/indexes.js
+1450 silly gunzTarPerm extractEntry lib/operations/insert.js
+1451 silly gunzTarPerm extractEntry lib/operations/is_capped.js
+1452 silly gunzTarPerm extractEntry lib/operations/list_collections.js
+1453 silly gunzTarPerm extractEntry lib/operations/list_databases.js
+1454 silly gunzTarPerm extractEntry lib/logger.js
+1455 silly gunzTarPerm extractEntry lib/operations/map_reduce.js
+1456 silly gunzTarPerm extractEntry lib/cmap/message_stream.js
+1457 silly gunzTarPerm extractEntry lib/cmap/metrics.js
+1458 silly gunzTarPerm extractEntry lib/mongo_client.js
+1459 silly gunzTarPerm extractEntry lib/cmap/auth/mongo_credentials.js
+1460 silly gunzTarPerm extractEntry lib/mongo_types.js
+1461 silly gunzTarPerm extractEntry lib/cmap/auth/mongocr.js
+1462 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_aws.js
+1463 silly gunzTarPerm extractEntry lib/sdam/monitor.js
+1464 silly gunzTarPerm extractEntry lib/operations/operation.js
+1465 silly gunzTarPerm extractEntry lib/operations/options_operation.js
+1466 silly gunzTarPerm extractEntry lib/bulk/ordered.js
+1467 silly gunzTarPerm extractEntry lib/cmap/auth/plain.js
+1468 silly gunzTarPerm extractEntry etc/prepare.js
+1469 silly gunzTarPerm extractEntry lib/operations/profiling_level.js
+1470 silly gunzTarPerm extractEntry lib/promise_provider.js
+1471 silly gunzTarPerm extractEntry lib/cmap/auth/providers.js
+1472 silly gunzTarPerm extractEntry lib/read_concern.js
+1473 silly gunzTarPerm extractEntry lib/read_preference.js
+1474 silly gunzTarPerm extractEntry lib/operations/remove_user.js
+1475 silly gunzTarPerm extractEntry lib/operations/rename.js
+1476 silly gunzTarPerm extractEntry lib/operations/run_command.js
+1477 silly gunzTarPerm extractEntry lib/cmap/auth/scram.js
+1478 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/socks-f1d05dd5/node_modules is being purged
+1479 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/socks-f1d05dd5/node_modules
+1480 silly gunzTarPerm extractEntry lib/sdam/server_description.js
+1481 silly gunzTarPerm extractEntry lib/sdam/server_selection.js
+1482 silly gunzTarPerm extractEntry lib/sdam/server.js
+1483 silly gunzTarPerm extractEntry lib/sessions.js
+1484 silly gunzTarPerm extractEntry lib/operations/set_profiling_level.js
+1485 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/shared.js
+1486 silly gunzTarPerm extractEntry lib/sort.js
+1487 silly gunzTarPerm extractEntry lib/sdam/srv_polling.js
+1488 silly gunzTarPerm extractEntry lib/operations/stats.js
+1489 silly gunzTarPerm extractEntry lib/cmap/stream_description.js
+1490 silly gunzTarPerm extractEntry lib/sdam/topology_description.js
+1491 silly gunzTarPerm extractEntry lib/sdam/topology.js
+1492 silly gunzTarPerm extractEntry lib/transactions.js
+1493 silly gunzTarPerm extractEntry lib/bulk/unordered.js
+1494 silly gunzTarPerm extractEntry lib/operations/update.js
+1495 silly gunzTarPerm extractEntry lib/gridfs/upload.js
+1496 silly gunzTarPerm extractEntry lib/utils.js
+1497 silly gunzTarPerm extractEntry lib/operations/validate_collection.js
+1498 silly gunzTarPerm extractEntry lib/write_concern.js
+1499 silly gunzTarPerm extractEntry lib/cmap/auth/x509.js
+1500 silly gunzTarPerm extractEntry package.json
+1501 silly gunzTarPerm extractEntry tsconfig.json
+1502 silly gunzTarPerm extractEntry lib/cursor/abstract_cursor.js.map
+1503 silly gunzTarPerm extractEntry lib/operations/add_user.js.map
+1504 silly gunzTarPerm extractEntry lib/admin.js.map
+1505 silly gunzTarPerm extractEntry lib/operations/aggregate.js.map
+1506 silly gunzTarPerm extractEntry lib/cursor/aggregation_cursor.js.map
+1507 silly gunzTarPerm extractEntry lib/cmap/auth/auth_provider.js.map
+1508 silly gunzTarPerm extractEntry lib/bson.js.map
+1509 silly gunzTarPerm extractEntry lib/operations/bulk_write.js.map
+1510 silly gunzTarPerm extractEntry lib/change_stream.js.map
+1511 silly gunzTarPerm extractEntry lib/collection.js.map
+1512 silly gunzTarPerm extractEntry lib/operations/collections.js.map
+1513 silly gunzTarPerm extractEntry lib/cmap/command_monitoring_events.js.map
+1514 silly gunzTarPerm extractEntry lib/operations/command.js.map
+1515 silly gunzTarPerm extractEntry lib/cmap/commands.js.map
+1516 silly gunzTarPerm extractEntry lib/operations/common_functions.js.map
+1517 silly gunzTarPerm extractEntry lib/bulk/common.js.map
+1518 silly gunzTarPerm extractEntry lib/sdam/common.js.map
+1519 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/compression.js.map
+1520 silly gunzTarPerm extractEntry lib/cmap/connect.js.map
+1521 silly gunzTarPerm extractEntry lib/operations/connect.js.map
+1522 silly gunzTarPerm extractEntry lib/cmap/connection_pool_events.js.map
+1523 silly gunzTarPerm extractEntry lib/cmap/connection_pool.js.map
+1524 silly gunzTarPerm extractEntry lib/connection_string.js.map
+1525 silly gunzTarPerm extractEntry lib/cmap/connection.js.map
+1526 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/constants.js.map
+1527 silly gunzTarPerm extractEntry lib/constants.js.map
+1528 silly gunzTarPerm extractEntry lib/operations/count_documents.js.map
+1529 silly gunzTarPerm extractEntry lib/operations/count.js.map
+1530 silly gunzTarPerm extractEntry lib/operations/create_collection.js.map
+1531 silly gunzTarPerm extractEntry lib/db.js.map
+1532 silly gunzTarPerm extractEntry lib/operations/delete.js.map
+1533 silly gunzTarPerm extractEntry lib/deps.js.map
+1534 silly gunzTarPerm extractEntry lib/operations/distinct.js.map
+1535 silly gunzTarPerm extractEntry lib/gridfs/download.js.map
+1536 silly gunzTarPerm extractEntry lib/operations/drop.js.map
+1537 silly gunzTarPerm extractEntry lib/encrypter.js.map
+1538 silly gunzTarPerm extractEntry lib/error.js.map
+1539 silly gunzTarPerm extractEntry lib/cmap/errors.js.map
+1540 silly gunzTarPerm extractEntry lib/operations/estimated_document_count.js.map
+1541 silly gunzTarPerm extractEntry lib/operations/eval.js.map
+1542 silly gunzTarPerm extractEntry lib/sdam/events.js.map
+1543 silly gunzTarPerm extractEntry lib/operations/execute_operation.js.map
+1544 silly gunzTarPerm extractEntry lib/explain.js.map
+1545 silly gunzTarPerm extractEntry lib/operations/find_and_modify.js.map
+1546 silly gunzTarPerm extractEntry lib/cursor/find_cursor.js.map
+1547 silly gunzTarPerm extractEntry lib/operations/find.js.map
+1548 silly gunzTarPerm extractEntry lib/operations/get_more.js.map
+1549 silly gunzTarPerm extractEntry lib/cmap/auth/gssapi.js.map
+1550 silly gunzTarPerm extractEntry lib/gridfs/index.js.map
+1551 silly gunzTarPerm extractEntry lib/index.js.map
+1552 silly gunzTarPerm extractEntry lib/operations/indexes.js.map
+1553 silly gunzTarPerm extractEntry lib/operations/insert.js.map
+1554 silly gunzTarPerm extractEntry lib/operations/is_capped.js.map
+1555 silly gunzTarPerm extractEntry lib/operations/list_collections.js.map
+1556 silly gunzTarPerm extractEntry lib/operations/list_databases.js.map
+1557 silly gunzTarPerm extractEntry lib/logger.js.map
+1558 silly gunzTarPerm extractEntry lib/operations/map_reduce.js.map
+1559 silly gunzTarPerm extractEntry lib/cmap/message_stream.js.map
+1560 silly gunzTarPerm extractEntry lib/cmap/metrics.js.map
+1561 silly gunzTarPerm extractEntry lib/mongo_client.js.map
+1562 silly gunzTarPerm extractEntry lib/cmap/auth/mongo_credentials.js.map
+1563 silly gunzTarPerm extractEntry lib/mongo_types.js.map
+1564 silly gunzTarPerm extractEntry lib/cmap/auth/mongocr.js.map
+1565 silly gunzTarPerm extractEntry lib/cmap/auth/mongodb_aws.js.map
+1566 silly gunzTarPerm extractEntry lib/sdam/monitor.js.map
+1567 silly gunzTarPerm extractEntry lib/operations/operation.js.map
+1568 silly gunzTarPerm extractEntry lib/operations/options_operation.js.map
+1569 silly gunzTarPerm extractEntry lib/bulk/ordered.js.map
+1570 silly gunzTarPerm extractEntry lib/cmap/auth/plain.js.map
+1571 silly gunzTarPerm extractEntry lib/operations/profiling_level.js.map
+1572 silly gunzTarPerm extractEntry lib/promise_provider.js.map
+1573 silly gunzTarPerm extractEntry lib/cmap/auth/providers.js.map
+1574 silly gunzTarPerm extractEntry lib/read_concern.js.map
+1575 silly gunzTarPerm extractEntry lib/read_preference.js.map
+1576 silly gunzTarPerm extractEntry lib/operations/remove_user.js.map
+1577 silly gunzTarPerm extractEntry lib/operations/rename.js.map
+1578 silly gunzTarPerm extractEntry lib/operations/run_command.js.map
+1579 silly gunzTarPerm extractEntry lib/cmap/auth/scram.js.map
+1580 silly gunzTarPerm extractEntry lib/sdam/server_description.js.map
+1581 silly gunzTarPerm extractEntry lib/sdam/server_selection.js.map
+1582 silly gunzTarPerm extractEntry lib/sdam/server.js.map
+1583 silly gunzTarPerm extractEntry lib/sessions.js.map
+1584 silly gunzTarPerm extractEntry lib/operations/set_profiling_level.js.map
+1585 silly gunzTarPerm extractEntry lib/cmap/wire_protocol/shared.js.map
+1586 silly gunzTarPerm extractEntry lib/sort.js.map
+1587 silly gunzTarPerm extractEntry lib/sdam/srv_polling.js.map
+1588 silly gunzTarPerm extractEntry lib/operations/stats.js.map
+1589 silly gunzTarPerm extractEntry lib/cmap/stream_description.js.map
+1590 warn install:@types/node@18.0.3 ENOTDIR: not a directory, open '/root/myapploadbalancer/node_modules/.staging/@types/node-2466a998/package.json'
+1591 verbose install:@types/node@18.0.3 Error: ENOTDIR: not a directory, open '/root/myapploadbalancer/node_modules/.staging/@types/node-2466a998/package.json'
+1592 silly gunzTarPerm extractEntry lib/sdam/topology_description.js.map
+1593 silly gunzTarPerm extractEntry lib/sdam/topology.js.map
+1594 silly gunzTarPerm extractEntry lib/transactions.js.map
+1595 silly gunzTarPerm extractEntry lib/bulk/unordered.js.map
+1596 silly gunzTarPerm extractEntry lib/operations/update.js.map
+1597 silly gunzTarPerm extractEntry lib/gridfs/upload.js.map
+1598 silly gunzTarPerm extractEntry lib/utils.js.map
+1599 silly gunzTarPerm extractEntry lib/operations/validate_collection.js.map
+1600 silly gunzTarPerm extractEntry lib/write_concern.js.map
+1601 silly gunzTarPerm extractEntry lib/cmap/auth/x509.js.map
+1602 silly gunzTarPerm extractEntry LICENSE.md
+1603 silly gunzTarPerm extractEntry README.md
+1604 silly gunzTarPerm extractEntry src/cursor/abstract_cursor.ts
+1605 silly gunzTarPerm extractEntry src/operations/add_user.ts
+1606 silly gunzTarPerm extractEntry src/admin.ts
+1607 silly gunzTarPerm extractEntry src/operations/aggregate.ts
+1608 silly gunzTarPerm extractEntry src/cursor/aggregation_cursor.ts
+1609 silly gunzTarPerm extractEntry src/cmap/auth/auth_provider.ts
+1610 silly gunzTarPerm extractEntry src/bson.ts
+1611 silly gunzTarPerm extractEntry src/operations/bulk_write.ts
+1612 silly gunzTarPerm extractEntry src/change_stream.ts
+1613 silly gunzTarPerm extractEntry src/collection.ts
+1614 silly gunzTarPerm extractEntry src/operations/collections.ts
+1615 silly gunzTarPerm extractEntry src/cmap/command_monitoring_events.ts
+1616 silly gunzTarPerm extractEntry src/operations/command.ts
+1617 silly gunzTarPerm extractEntry src/cmap/commands.ts
+1618 silly gunzTarPerm extractEntry src/operations/common_functions.ts
+1619 silly gunzTarPerm extractEntry src/bulk/common.ts
+1620 silly gunzTarPerm extractEntry src/sdam/common.ts
+1621 silly gunzTarPerm extractEntry src/cmap/wire_protocol/compression.ts
+1622 silly gunzTarPerm extractEntry src/cmap/connect.ts
+1623 silly gunzTarPerm extractEntry src/operations/connect.ts
+1624 silly gunzTarPerm extractEntry src/cmap/connection_pool_events.ts
+1625 silly gunzTarPerm extractEntry src/cmap/connection_pool.ts
+1626 silly gunzTarPerm extractEntry src/connection_string.ts
+1627 silly gunzTarPerm extractEntry src/cmap/connection.ts
+1628 silly gunzTarPerm extractEntry src/cmap/wire_protocol/constants.ts
+1629 silly gunzTarPerm extractEntry src/constants.ts
+1630 silly gunzTarPerm extractEntry src/operations/count_documents.ts
+1631 silly gunzTarPerm extractEntry src/operations/count.ts
+1632 silly gunzTarPerm extractEntry src/operations/create_collection.ts
+1633 silly gunzTarPerm extractEntry src/db.ts
+1634 silly gunzTarPerm extractEntry src/operations/delete.ts
+1635 silly gunzTarPerm extractEntry src/deps.ts
+1636 silly gunzTarPerm extractEntry src/operations/distinct.ts
+1637 silly gunzTarPerm extractEntry src/gridfs/download.ts
+1638 silly gunzTarPerm extractEntry src/operations/drop.ts
+1639 silly gunzTarPerm extractEntry src/encrypter.ts
+1640 silly gunzTarPerm extractEntry src/error.ts
+1641 silly gunzTarPerm extractEntry src/cmap/errors.ts
+1642 silly gunzTarPerm extractEntry src/operations/estimated_document_count.ts
+1643 silly gunzTarPerm extractEntry src/operations/eval.ts
+1644 silly gunzTarPerm extractEntry src/sdam/events.ts
+1645 silly gunzTarPerm extractEntry src/operations/execute_operation.ts
+1646 silly gunzTarPerm extractEntry src/explain.ts
+1647 silly gunzTarPerm extractEntry src/operations/find_and_modify.ts
+1648 silly gunzTarPerm extractEntry src/cursor/find_cursor.ts
+1649 silly gunzTarPerm extractEntry src/operations/find.ts
+1650 silly gunzTarPerm extractEntry src/operations/get_more.ts
+1651 silly gunzTarPerm extractEntry src/cmap/auth/gssapi.ts
+1652 silly gunzTarPerm extractEntry src/gridfs/index.ts
+1653 silly gunzTarPerm extractEntry src/index.ts
+1654 silly gunzTarPerm extractEntry src/operations/indexes.ts
+1655 silly gunzTarPerm extractEntry src/operations/insert.ts
+1656 silly gunzTarPerm extractEntry src/operations/is_capped.ts
+1657 silly gunzTarPerm extractEntry src/operations/list_collections.ts
+1658 silly gunzTarPerm extractEntry src/operations/list_databases.ts
+1659 silly gunzTarPerm extractEntry src/logger.ts
+1660 silly gunzTarPerm extractEntry src/operations/map_reduce.ts
+1661 silly gunzTarPerm extractEntry src/cmap/message_stream.ts
+1662 silly gunzTarPerm extractEntry src/cmap/metrics.ts
+1663 silly gunzTarPerm extractEntry src/mongo_client.ts
+1664 silly gunzTarPerm extractEntry src/cmap/auth/mongo_credentials.ts
+1665 silly gunzTarPerm extractEntry src/mongo_types.ts
+1666 silly gunzTarPerm extractEntry src/cmap/auth/mongocr.ts
+1667 silly gunzTarPerm extractEntry src/cmap/auth/mongodb_aws.ts
+1668 silly gunzTarPerm extractEntry mongodb.d.ts
+1669 silly gunzTarPerm extractEntry src/sdam/monitor.ts
+1670 silly gunzTarPerm extractEntry src/operations/operation.ts
+1671 silly gunzTarPerm extractEntry src/operations/options_operation.ts
+1672 silly gunzTarPerm extractEntry src/bulk/ordered.ts
+1673 silly gunzTarPerm extractEntry src/cmap/auth/plain.ts
+1674 silly gunzTarPerm extractEntry src/operations/profiling_level.ts
+1675 silly gunzTarPerm extractEntry src/promise_provider.ts
+1676 silly gunzTarPerm extractEntry src/cmap/auth/providers.ts
+1677 silly gunzTarPerm extractEntry src/read_concern.ts
+1678 silly gunzTarPerm extractEntry src/read_preference.ts
+1679 silly gunzTarPerm extractEntry src/operations/remove_user.ts
+1680 silly gunzTarPerm extractEntry src/operations/rename.ts
+1681 silly gunzTarPerm extractEntry src/operations/run_command.ts
+1682 silly gunzTarPerm extractEntry src/cmap/auth/scram.ts
+1683 silly gunzTarPerm extractEntry src/sdam/server_description.ts
+1684 silly gunzTarPerm extractEntry src/sdam/server_selection.ts
+1685 silly gunzTarPerm extractEntry src/sdam/server.ts
+1686 silly gunzTarPerm extractEntry src/sessions.ts
+1687 silly gunzTarPerm extractEntry src/operations/set_profiling_level.ts
+1688 silly gunzTarPerm extractEntry src/cmap/wire_protocol/shared.ts
+1689 silly gunzTarPerm extractEntry src/sort.ts
+1690 silly gunzTarPerm extractEntry src/sdam/srv_polling.ts
+1691 silly gunzTarPerm extractEntry src/operations/stats.ts
+1692 silly gunzTarPerm extractEntry src/cmap/stream_description.ts
+1693 silly gunzTarPerm extractEntry src/sdam/topology_description.ts
+1694 silly gunzTarPerm extractEntry src/sdam/topology.ts
+1695 silly gunzTarPerm extractEntry src/transactions.ts
+1696 silly gunzTarPerm extractEntry src/bulk/unordered.ts
+1697 silly gunzTarPerm extractEntry src/operations/update.ts
+1698 silly gunzTarPerm extractEntry src/gridfs/upload.ts
+1699 silly gunzTarPerm extractEntry src/utils.ts
+1700 silly gunzTarPerm extractEntry src/operations/validate_collection.ts
+1701 silly gunzTarPerm extractEntry src/write_concern.ts
+1702 silly gunzTarPerm extractEntry src/cmap/auth/x509.ts
+1703 silly gentlyRm /root/myapploadbalancer/node_modules/.staging/mongodb-2ab22edb/node_modules is being purged
+1704 verbose gentlyRm don't care about contents; nuking /root/myapploadbalancer/node_modules/.staging/mongodb-2ab22edb/node_modules
+1705 verbose unlock done using /root/.npm/_locks/staging-b261f3278342d555.lock for /root/myapploadbalancer/node_modules/.staging
+1706 silly rollbackFailedOptional Starting
+1707 silly rollbackFailedOptional Finishing
+1708 silly runTopLevelLifecycles Starting
+1709 silly runTopLevelLifecycles Finishing
+1710 silly install printInstalled
+1711 warn myapp@1.0.0 No description
+1712 warn myapp@1.0.0 No repository field.
+1713 verbose stack Error: ENOTDIR: not a directory, open '/root/myapploadbalancer/node_modules/.staging/@types/whatwg-url-7dac22e6/package.json'
+1714 verbose cwd /root/myapploadbalancer
+1715 error Linux 5.4.0-1080-gcp
+1716 error argv "/usr/bin/node" "/usr/bin/npm" "install" "mongodb"
+1717 error node v8.10.0
+1718 error npm  v3.5.2
+1719 error path /root/myapploadbalancer/node_modules/.staging/@types/whatwg-url-7dac22e6/package.json
+1720 error code ENOTDIR
+1721 error errno -20
+1722 error syscall open
+1723 error ENOTDIR: not a directory, open '/root/myapploadbalancer/node_modules/.staging/@types/whatwg-url-7dac22e6/package.json'
+1724 error If you need help, you may report this error at:
+1724 error     <https://github.com/npm/npm/issues>
+1725 verbose exit [ -20, true ]

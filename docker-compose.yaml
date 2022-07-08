@@ -12,12 +12,32 @@ services:
     ports:
       - "27017:27017"
     container_name: my_db_rishabh
-  app:
+  app-1:
     # build: 
     #   context: .
     #   dockerfile: Dockerfile
-    image: rishabhbhojak/loadapp
+    image: rishabhbhojak/app1
     ports: 
-      - 3000:3000
+      - '81:3000'
     depends_on: 
       - mongo_server
+      
+  app-2:
+    # build: 
+    #   context: .
+    #   dockerfile: Dockerfile
+    image: rishabhbhojak/app1
+    ports: 
+      - '82:3000'
+    depends_on: 
+      - mongo_server
+  nginx:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+    - '80:80'
+    depends_on: 
+      - app-1
+      - app-2
+      
